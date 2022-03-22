@@ -1,17 +1,6 @@
-
 ;(function($) {
 
-/*>>core*/
-/**
- * 
- * Magnific Popup Core JS file
- * 
- */
 
-
-/**
- * Private static constants
- */
 var CLOSE_EVENT = 'Close',
 	BEFORE_CLOSE_EVENT = 'BeforeClose',
 	AFTER_CLOSE_EVENT = 'AfterClose',
