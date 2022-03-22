@@ -1,6 +1,4 @@
 
-/******/
-
 .nivo-lightbox-overlay {
 	position: fixed;
 	top: 0;
@@ -104,7 +102,7 @@
 	        transition: all 0.2s ease-in-out;
 }
 
-/* fadeScale */
+
 .nivo-lightbox-effect-fadeScale .nivo-lightbox-wrap {
 	-webkit-transition: all 0.3s;
 	   -moz-transition: all 0.3s;
@@ -123,7 +121,9 @@
 	        transform: scale(1);
 }
 
-/* slideLeft / slideRight / slideUp / slideDown */
+
+
+
 .nivo-lightbox-effect-slideLeft .nivo-lightbox-wrap,
 .nivo-lightbox-effect-slideRight .nivo-lightbox-wrap,
 .nivo-lightbox-effect-slideUp .nivo-lightbox-wrap,
@@ -173,7 +173,7 @@
 	        transform: translateY(0);
 }
 
-/* fall */
+
 .nivo-lightbox-body-effect-fall .nivo-lightbox-effect-fall {
 	-webkit-perspective: 1000px;
 	   -moz-perspective: 1000px;
@@ -196,14 +196,9 @@
 	    -ms-transform: translateZ(0);
 	        transform: translateZ(0);
 }
-/*
- * Nivo Lightbox Default Theme v1.0
- * http://dev7studios.com/nivo-lightbox
- *
- * Copyright 2013, Dev7studios
- * Free to use and abuse under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
+
+
+
  
 .nivo-lightbox-theme-default.nivo-lightbox-overlay { 
 	background: #666;
@@ -306,7 +301,10 @@
 	}
 }
 
-/*******end-porfolio_pop_up*********/
+
+
+
+
 @media screen and (max-width: 1366px)
 {
 	.contact-member {
@@ -325,7 +323,9 @@
 	max-width: 80%;
 	}
 }
-/*******end-porfolio_pop_up*********/
+
+
+
 @media screen and (max-width: 768px)
 {
 	.sticky-col {

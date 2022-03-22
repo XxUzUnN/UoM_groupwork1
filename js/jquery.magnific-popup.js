@@ -1,19 +1,6 @@
-/*! Magnific Popup - v0.9.9 - 2013-11-15
-* http://dimsemenov.com/plugins/magnific-popup/
-* Copyright (c) 2013 Dmitry Semenov; */
 ;(function($) {
 
-/*>>core*/
-/**
- * 
- * Magnific Popup Core JS file
- * 
- */
 
-
-/**
- * Private static constants
- */
 var CLOSE_EVENT = 'Close',
 	BEFORE_CLOSE_EVENT = 'BeforeClose',
 	AFTER_CLOSE_EVENT = 'AfterClose',
@@ -31,7 +18,7 @@ var CLOSE_EVENT = 'Close',
 /**
  * Private vars 
  */
-var mfp, // As we have only one instance of MagnificPopup object, we define it locally to not to use 'this'
+var mfp, 
 	MagnificPopup = function(){},
 	_isJQ = !!(window.jQuery),
 	_prevStatus,
@@ -69,7 +56,7 @@ var _mfpOn = function(name, f) {
 		mfp.ev.triggerHandler(NS + e, data);
 
 		if(mfp.st.callbacks) {
-			// converts "mfpEventName" to "eventName" callback and triggers it if it's present
+			
 			e = e.charAt(0).toLowerCase() + e.slice(1);
 			if(mfp.st.callbacks[e]) {
 				mfp.st.callbacks[e].apply(mfp, $.isArray(data) ? data : [data]);
@@ -83,7 +70,7 @@ var _mfpOn = function(name, f) {
 		}
 		return mfp.currTemplate.closeBtn;
 	},
-	// Initialize Magnific Popup only when called at least once
+
 	_checkInstance = function() {
 		if(!$.magnificPopup.instance) {
 			mfp = new MagnificPopup();
@@ -91,7 +78,7 @@ var _mfpOn = function(name, f) {
 			$.magnificPopup.instance = mfp;
 		}
 	},
-	// CSS transition detection, http://stackoverflow.com/questions/7264899/detect-css-transitions-using-javascript-and-without-modernizr
+	
 	supportsTransitions = function() {
 		var s = document.createElement('p').style, // 's' for style. better to create an element if body yet to exist
 			v = ['ms','O','Moz','Webkit']; // 'v' for vendor
@@ -131,8 +118,7 @@ MagnificPopup.prototype = {
 		mfp.isIOS = (/iphone|ipad|ipod/gi).test(appVersion);
 		mfp.supportsTransition = supportsTransitions();
 
-		// We disable fixed positioned lightbox on devices that don't handle it nicely.
-		// If you know a better way of detecting this - let me know.
+	
 		mfp.probablyMobile = (mfp.isAndroid || mfp.isIOS || /(Opera Mini)|Kindle|webOS|BlackBerry|(Opera Mobi)|(Windows Phone)|IEMobile/i.test(navigator.userAgent) );
 		_body = $(document.body);
 		_document = $(document);
@@ -206,8 +192,7 @@ MagnificPopup.prototype = {
 		}
 		
 
-		// Building markup
-		// main containers are created only once
+
 		if(!mfp.bgOverlay) {
 
 			// Dark overlay
@@ -230,7 +215,7 @@ MagnificPopup.prototype = {
 		}
 
 
-		// Initializing modules
+	
 		var modules = $.magnificPopup.modules;
 		for(i = 0; i < modules.length; i++) {
 			var n = modules[i];
@@ -335,35 +320,35 @@ MagnificPopup.prototype = {
 			mfp._addClassToMFP( classesToadd );
 		}
 
-		// add content
+	
 		mfp.updateItemHTML();
 
 		_mfpTrigger('BuildControls');
 
 
-		// remove scrollbar, add margin e.t.c
+	
 		$('html').css(windowStyles);
 		
-		// add everything to DOM
+	
 		mfp.bgOverlay.add(mfp.wrap).prependTo( document.body );
 
 
 
-		// Save last focused element
+	
 		mfp._lastFocusedEl = document.activeElement;
 		
-		// Wait for next cycle to allow CSS transition
+
 		setTimeout(function() {
 			
 			if(mfp.content) {
 				mfp._addClassToMFP(READY_CLASS);
 				mfp._setFocus();
 			} else {
-				// if content is not defined (not loaded e.t.c) we add class only for BG
+	
 				mfp.bgOverlay.addClass(READY_CLASS);
 			}
 			
-			// Trap the focus in popup
+	
 			_document.on('focusin' + EVENT_NS, mfp._onFocusIn);
 
 		}, 16);
@@ -383,7 +368,7 @@ MagnificPopup.prototype = {
 		_mfpTrigger(BEFORE_CLOSE_EVENT);
 
 		mfp.isOpen = false;
-		// for CSS3 animation
+
 		if(mfp.st.removalDelay && !mfp.isLowIE && mfp.supportsTransition )  {
 			mfp._addClassToMFP(REMOVING_CLASS);
 			setTimeout(function() {
@@ -425,12 +410,13 @@ MagnificPopup.prototype = {
 		_document.off('keyup' + EVENT_NS + ' focusin' + EVENT_NS);
 		mfp.ev.off(EVENT_NS);
 
-		// clean up DOM elements that aren't removed
+	
 		mfp.wrap.attr('class', 'mfp-wrap').removeAttr('style');
 		mfp.bgOverlay.attr('class', 'mfp-bg');
 		mfp.container.attr('class', 'mfp-container');
 
-		// remove close button from target element
+
+
 		if(mfp.st.showCloseBtn &&
 		(!mfp.st.closeBtnInside || mfp.currTemplate[mfp.currItem.type] === true)) {
 			if(mfp.currTemplate.closeBtn)
@@ -452,7 +438,7 @@ MagnificPopup.prototype = {
 	updateSize: function(winHeight) {
 
 		if(mfp.isIOS) {
-			// fixes iOS nav bars https://github.com/dimsemenov/Magnific-Popup/issues/2
+
 			var zoomLevel = document.documentElement.clientWidth / window.innerWidth;
 			var height = window.innerHeight * zoomLevel;
 			mfp.wrap.css('height', height);
@@ -460,7 +446,7 @@ MagnificPopup.prototype = {
 		} else {
 			mfp.wH = winHeight || _window.height();
 		}
-		// Fixes #84: popup incorrectly positioned with position:relative on body
+
 		if(!mfp.fixedContentPos) {
 			mfp.wrap.css('height', mfp.wH);
 		}
@@ -475,7 +461,7 @@ MagnificPopup.prototype = {
 	updateItemHTML: function() {
 		var item = mfp.items[mfp.index];
 
-		// Detach and perform modifications
+
 		mfp.contentContainer.detach();
 
 		if(mfp.content)
@@ -488,8 +474,9 @@ MagnificPopup.prototype = {
 		var type = item.type;	
 
 		_mfpTrigger('BeforeChange', [mfp.currItem ? mfp.currItem.type : '', type]);
-		// BeforeChange event works like so:
-		// _mfpOn('BeforeChange', function(e, prevType, newType) { });
+
+
+
 		
 		mfp.currItem = item;
 
@@ -500,7 +487,8 @@ MagnificPopup.prototype = {
 		if(!mfp.currTemplate[type]) {
 			var markup = mfp.st[type] ? mfp.st[type].markup : false;
 
-			// allows to modify markup
+
+
 			_mfpTrigger('FirstMarkupParse', markup);
 
 			if(markup) {
@@ -523,7 +511,8 @@ MagnificPopup.prototype = {
 		_mfpTrigger(CHANGE_EVENT, item);
 		_prevContentType = item.type;
 		
-		// Append container back after its content changed
+
+
 		mfp.container.prepend(mfp.contentContainer);
 
 		_mfpTrigger('AfterChange');
@@ -576,7 +565,8 @@ MagnificPopup.prototype = {
 		if(item.el) {
 			var types = mfp.types;
 
-			// check for 'mfp-TYPE' class
+
+
 			for(var i = 0; i < types.length; i++) {
 				if( item.el.hasClass('mfp-'+types[i]) ) {
 					type = types[i];
@@ -654,7 +644,9 @@ MagnificPopup.prototype = {
 		if(e.type) {
 			e.preventDefault();
 
-			// This will prevent popup from closing if element is inside and popup is already opened
+
+
+
 			if(mfp.isOpen) {
 				e.stopPropagation();
 			}
@@ -687,7 +679,10 @@ MagnificPopup.prototype = {
 				status: status,
 				text: text
 			};
-			// allows to modify status
+
+
+
+
 			_mfpTrigger('UpdateStatus', data);
 
 			status = data.status;
@@ -705,11 +700,7 @@ MagnificPopup.prototype = {
 	},
 
 
-	/*
-		"Private" helpers that aren't private at all
-	 */
-	// Check to close popup or not
-	// "target" is an element that was clicked
+
 	_checkIfClose: function(target) {
 
 		if($(target).hasClass(PREVENT_CLOSE_CLASS)) {
@@ -723,15 +714,17 @@ MagnificPopup.prototype = {
 			return true;
 		} else {
 
-			// We close the popup if click is on close button or on preloader. Or if there is no content.
+
 			if(!mfp.content || $(target).hasClass('mfp-close') || (mfp.preloader && target === mfp.preloader[0]) ) {
 				return true;
 			}
 
-			// if click is outside the content
+	
+	
 			if(  (target !== mfp.content[0] && !$.contains(mfp.content[0], target))  ) {
 				if(closeOnBg) {
-					// last check, if the clicked element is in DOM, (in case it's removed onclick)
+
+
 					if( $.contains(document, target) ) {
 						return true;
 					}
@@ -814,7 +807,7 @@ MagnificPopup.prototype = {
 		return mfp.scrollbarSize;
 	}
 
-}; /* MagnificPopup core prototype end */
+}; 
 
 
 
@@ -856,8 +849,8 @@ $.magnificPopup = {
 
 	defaults: {   
 
-		// Info about options is in docs:
-		// http://dimsemenov.com/plugins/magnific-popup/documentation.html#options
+		
+		
 		
 		disableOn: 0,	
 
@@ -936,11 +929,11 @@ $.fn.magnificPopup = function(options) {
 		// clone options obj
 		options = $.extend(true, {}, options);
 		
-		/*
-		 * As Zepto doesn't support .data() method for objects 
-		 * and it works only in normal browsers
-		 * we assign "options" object directly to the DOM element. FTW!
-		 */
+
+
+
+
+
 		if(_isJQ) {
 			jqEl.data('magnificPopup', options);
 		} else {
@@ -954,28 +947,11 @@ $.fn.magnificPopup = function(options) {
 };
 
 
-//Quick benchmark
-/*
-var start = performance.now(),
-	i,
-	rounds = 1000;
-
-for(i = 0; i < rounds; i++) {
-
-}
-console.log('Test #1:', performance.now() - start);
-
-start = performance.now();
-for(i = 0; i < rounds; i++) {
-
-}
-console.log('Test #2:', performance.now() - start);
-*/
 
 
-/*>>core*/
 
-/*>>inline*/
+
+
 
 var INLINE_NS = 'inline',
 	_hiddenClass,
@@ -1043,9 +1019,10 @@ $.magnificPopup.registerModule(INLINE_NS, {
 	}
 });
 
-/*>>inline*/
 
-/*>>ajax*/
+
+
+
 var AJAX_NS = 'ajax',
 	_ajaxCur,
 	_removeAjaxCursor = function() {
@@ -1129,9 +1106,7 @@ $.magnificPopup.registerModule(AJAX_NS, {
 
 	
 
-/*>>ajax*/
 
-/*>>image*/
 var _imgInterval,
 	_getTitle = function(item) {
 		if(item.data && item.data.title !== undefined) 
@@ -1302,7 +1277,7 @@ $.magnificPopup.registerModule('image', {
 					}
 				},
 
-				// image error handler
+			
 				onLoadError = function() {
 					if(item) {
 						item.img.off('.mfploader');
@@ -1326,8 +1301,7 @@ $.magnificPopup.registerModule('image', {
 				item.img = $(img).on('load.mfploader', onLoadComplete).on('error.mfploader', onLoadError);
 				img.src = item.src;
 
-				// without clone() "error" event is not firing when IMG is replaced by new IMG
-				// TODO: find a way to avoid such cloning
+		
 				if(el.is('img')) {
 					item.img = item.img.clone();
 				}
@@ -1372,9 +1346,9 @@ $.magnificPopup.registerModule('image', {
 
 
 
-/*>>image*/
 
-/*>>zoom*/
+
+
 var hasMozTransform,
 	getHasMozTransform = function() {
 		if(hasMozTransform === undefined) {
@@ -1435,7 +1409,7 @@ $.magnificPopup.registerModule('zoom', {
 					clearTimeout(openTimeout);
 					mfp.content.css('visibility', 'hidden');
 
-					// Basically, all code below does is clones existing image, puts in on top of the current one and animated it
+					
 					
 					image = mfp._getItemToZoom();
 
@@ -1460,14 +1434,14 @@ $.magnificPopup.registerModule('zoom', {
 								animatedImg.remove();
 								image = animatedImg = null;
 								_mfpTrigger('ZoomAnimationEnded');
-							}, 16); // avoid blink when switching images 
+							}, 16);  
 
-						}, duration); // this timeout equals animation duration
+						}, duration); 
 
-					}, 16); // by adding this timeout we avoid short glitch at the beginning of animation
+					}, 16); 
 
 
-					// Lots of timeouts...
+				
 				}
 			});
 			_mfpOn(BEFORE_CLOSE_EVENT+ns, function() {
@@ -1520,7 +1494,7 @@ $.magnificPopup.registerModule('zoom', {
 			}
 		},
 
-		// Get element postion relative to viewport
+	
 		_getOffset: function(isLarge) {
 			var el;
 			if(isLarge) {
@@ -1535,18 +1509,14 @@ $.magnificPopup.registerModule('zoom', {
 			offset.top -= ( $(window).scrollTop() - paddingTop );
 
 
-			/*
-			
-			Animating left + top + width/height looks glitchy in Firefox, but perfect in Chrome. And vice-versa.
-
-			 */
+		
 			var obj = {
 				width: el.width(),
-				// fix Zepto height+padding issue
+			
 				height: (_isJQ ? el.innerHeight() : el[0].offsetHeight) - paddingBottom - paddingTop
 			};
 
-			// I hate to do this, but there is no another option
+		
 			if( getHasMozTransform() ) {
 				obj['-moz-transform'] = obj['transform'] = 'translate(' + offset.left + 'px,' + offset.top + 'px)';
 			} else {
@@ -1561,9 +1531,6 @@ $.magnificPopup.registerModule('zoom', {
 
 
 
-/*>>zoom*/
-
-/*>>iframe*/
 
 var IFRAME_NS = 'iframe',
 	_emptyPage = '//about:blank',
@@ -1572,12 +1539,12 @@ var IFRAME_NS = 'iframe',
 		if(mfp.currTemplate[IFRAME_NS]) {
 			var el = mfp.currTemplate[IFRAME_NS].find('iframe');
 			if(el.length) { 
-				// reset src after the popup is closed to avoid "video keeps playing after popup is closed" bug
+			
 				if(!isShowing) {
 					el[0].src = _emptyPage;
 				}
 
-				// IE8 black screen bug fix
+			
 				if(mfp.isIE8) {
 					el.css('display', isShowing ? 'block' : 'none');
 				}
@@ -1595,7 +1562,7 @@ $.magnificPopup.registerModule(IFRAME_NS, {
 
 		srcAction: 'iframe_src',
 
-		// we don't care and support only one default type of URL by default
+		
 		patterns: {
 			youtube: {
 				index: 'youtube.com', 
@@ -1625,9 +1592,7 @@ $.magnificPopup.registerModule(IFRAME_NS, {
 					} else if(newType === IFRAME_NS) {
 						_fixIframeBugs(true); // iframe is showing
 					} 
-				}// else {
-					// iframe source is switched, don't do anything
-				//}
+				}
 			});
 
 			_mfpOn(CLOSE_EVENT + '.' + IFRAME_NS, function() {
@@ -1668,9 +1633,7 @@ $.magnificPopup.registerModule(IFRAME_NS, {
 
 
 
-/*>>iframe*/
 
-/*>>gallery*/
 /**
  * Get looped index depending on number of slides
  */
@@ -1850,61 +1813,6 @@ $.magnificPopup.registerModule('gallery', {
 	}
 });
 
-/*
-Touch Support that might be implemented some day
-
-addSwipeGesture: function() {
-	var startX,
-		moved,
-		multipleTouches;
-
-		return;
-
-	var namespace = '.mfp',
-		addEventNames = function(pref, down, move, up, cancel) {
-			mfp._tStart = pref + down + namespace;
-			mfp._tMove = pref + move + namespace;
-			mfp._tEnd = pref + up + namespace;
-			mfp._tCancel = pref + cancel + namespace;
-		};
-
-	if(window.navigator.msPointerEnabled) {
-		addEventNames('MSPointer', 'Down', 'Move', 'Up', 'Cancel');
-	} else if('ontouchstart' in window) {
-		addEventNames('touch', 'start', 'move', 'end', 'cancel');
-	} else {
-		return;
-	}
-	_window.on(mfp._tStart, function(e) {
-		var oE = e.originalEvent;
-		multipleTouches = moved = false;
-		startX = oE.pageX || oE.changedTouches[0].pageX;
-	}).on(mfp._tMove, function(e) {
-		if(e.originalEvent.touches.length > 1) {
-			multipleTouches = e.originalEvent.touches.length;
-		} else {
-			//e.preventDefault();
-			moved = true;
-		}
-	}).on(mfp._tEnd + ' ' + mfp._tCancel, function(e) {
-		if(moved && !multipleTouches) {
-			var oE = e.originalEvent,
-				diff = startX - (oE.pageX || oE.changedTouches[0].pageX);
-
-			if(diff > 20) {
-				mfp.next();
-			} else if(diff < -20) {
-				mfp.prev();
-			}
-		}
-	});
-},
-*/
-
-
-/*>>gallery*/
-
-/*>>retina*/
 
 var RETINA_NS = 'retina';
 
@@ -1941,27 +1849,7 @@ $.magnificPopup.registerModule(RETINA_NS, {
 	}
 });
 
-/*>>retina*/
 
-/*>>fastclick*/
-/**
- * FastClick event implementation. (removes 300ms delay on touch devices)
- * Based on https://developers.google.com/mobile/articles/fast_buttons
- *
- * You may use it outside the Magnific Popup by calling just:
- *
- * $('.your-el').mfpFastClick(function() {
- *     console.log('Clicked!');
- * });
- *
- * To unbind:
- * $('.your-el').destroyMfpFastClick();
- * 
- * 
- * Note that it's a very basic and simple implementation, it blocks ghost click on the same element where it was bound.
- * If you need something more advanced, use plugin by FT Labs https://github.com/ftlabs/fastclick
- * 
- */
 
 (function() {
 	var ghostClickDelay = 1000,
@@ -1973,7 +1861,7 @@ $.magnificPopup.registerModule(RETINA_NS, {
 		ns = '.'+eName;
 
 
-	// As Zepto.js doesn't have an easy way to add custom events (like jQuery), so we implement it in this way
+	
 	$.fn.mfpFastClick = function(callback) {
 
 		return $(this).each(function() {
@@ -2038,5 +1926,4 @@ $.magnificPopup.registerModule(RETINA_NS, {
 	};
 })();
 
-/*>>fastclick*/
  _checkInstance(); })(window.jQuery || window.Zepto);
