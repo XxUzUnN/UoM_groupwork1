@@ -1,18 +1,9 @@
-/*!
- * jQuery wmuSlider v2.1
- * 
- * Copyright (c) 2011 Brice Lechatellier
- * http://brice.lechatellier.com/
- *
- * Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
- */
 
 ;(function($) {
     
     $.fn.wmuSlider = function(options) {
 
-        /* Default Options
-        ================================================== */       
+]     
         var defaults = {
             animation: 'fade',
             animationDuration: 600,
@@ -31,8 +22,7 @@
         
         return this.each(function() {
 
-            /* Variables
-            ================================================== */
+
             var $this = $(this);
             var currentIndex = options.slideToStart;
             var wrapper = $this.find('.wmuSliderWrapper');
@@ -43,8 +33,7 @@
             var isAnimating;
             
             
-            /* Load Slide
-            ================================================== */ 
+ 
             var loadSlide = function(index, infinite, touch) {
                 if (isAnimating) {
                     return false;
@@ -98,9 +87,7 @@
                 $this.trigger('slideLoaded', index);             
             };
             
-            
-            /* Navigation Control
-            ================================================== */ 
+
             if (options.navigationControl) {
                 var prev = $('<a class="wmuSliderPrev">' + options.previousText + '</a>');
                 prev.click(function(e) {
@@ -128,24 +115,8 @@
             }
             
 
-            /* Pagination Control
-            ================================================== */ 
-           /*-- if (options.paginationControl) {
-                paginationControl = $('<ul class="wmuSliderPagination"></ul>');
-                $.each(slides, function(i) {
-                    paginationControl.append('<li><a href="#">' + i + '</a></li>');
-                    paginationControl.find('a:eq(' + i + ')').click(function(e) {    
-                        e.preventDefault();
-                        clearTimeout(slideshowTimeout);   
-                        loadSlide(i);
-                    });                
-                });
-                $this.append(paginationControl);
-            }
-            
-            
-            /* Slideshow
-            ================================================== */ 
+
+
             if (options.slideshow) {
                 var slideshow = function() {
                     if (currentIndex + 1 < slidesCount) {
@@ -158,9 +129,10 @@
                 slideshowTimeout = setTimeout(slideshow, options.slideshowSpeed);
             }
             
-                        
-            /* Resize Slider
-            ================================================== */ 
+
+
+
+
             var resize = function() {
                 var slide = $(slides[currentIndex]);
                 $this.animate({ height: slide.innerHeight() });
@@ -176,8 +148,7 @@
             };
             
                         
-            /* Touch
-            ================================================== */
+
             var touchSwipe = function(event, phase, direction, distance) {
                 clearTimeout(slideshowTimeout);              
                 if(phase == 'move' && (direction == 'left' || direction == 'right')) {
@@ -226,9 +197,9 @@
                 }
             }
             
-            
-            /* Init Slider
-            ================================================== */ 
+
+
+
             var init = function() {
                 var slide = $(slides[currentIndex]);
                 var img = slide.find('img');
@@ -266,12 +237,12 @@
             init();
             
                                                 
-            /* Bind Events
-            ================================================== */
-            // Resize
+
             $(window).resize(resize);
             
-            // Load Slide
+
+
+
             $this.bind('loadSlide', function(e, i) {
                 clearTimeout(slideshowTimeout);
                 loadSlide(i);
