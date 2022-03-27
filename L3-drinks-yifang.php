@@ -131,6 +131,63 @@
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
+                            <div class="comments-main">
+                                <div class="col-md-2 cmts-main-left">
+                                    <img alt="" src="images/t3.jpg">
+                                </div>
+                                <div class="col-md-10 cmts-main-right">
+                                    <h5>Xinyu Li</h5>
+                                    <p>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+                                    <div class="cmts">
+                                        <div class="col-md-6 cmnts-left">
+                                            <p>On Feb 25, 2022, 13:15</p>
+                                        </div>
+                                        <div class="col-md-6 cmnts-right">
+                                            <a href="#">Reply</a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="comments-main">
+                                <div class="col-md-2 cmts-main-left">
+                                    <img alt="" src="images/t3.jpg">
+                                </div>
+                                <div class="col-md-10 cmts-main-right">
+                                    <h5>Yuanye Dong</h5>
+                                    <p>ooooooooooooooooooooooooooooo</p>
+                                    <div class="cmts">
+                                        <div class="col-md-6 cmnts-left">
+                                            <p>On Feb 18, 2022, 22:22</p>
+                                        </div>
+                                        <div class="col-md-6 cmnts-right">
+                                            <a href="#">Reply</a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="comments-main">
+                                <div class="col-md-2 cmts-main-left">
+                                    <img alt="" src="images/t3.jpg">
+                                </div>
+                                <div class="col-md-10 cmts-main-right">
+                                    <h5>Yining Du</h5>
+                                    <p>dddddddddddddddddddddddddd</p>
+                                    <div class="cmts">
+                                        <div class="col-md-6 cmnts-left">
+                                            <p>On Feb 25, 2022, 03:05</p>
+                                        </div>
+                                        <div class="col-md-6 cmnts-right">
+                                            <a href="#">Reply</a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
                         </div>
                     </div>
 

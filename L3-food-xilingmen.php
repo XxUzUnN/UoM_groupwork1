@@ -101,10 +101,29 @@
                                 </div>
                                 <div class="col-md-10 cmts-main-right">
                                     <h5>Zixun Zhou</h5>
-                                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
                                     <div class="cmts">
                                         <div class="col-md-6 cmnts-left">
                                             <p>On Feb 20, 2022, 18:01</p>
+                                        </div>
+                                        <div class="col-md-6 cmnts-right">
+                                            <a href="#">Reply</a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="comments-main">
+                                <div class="col-md-2 cmts-main-left">
+                                    <img alt="" src="">
+                                </div>
+                                <div class="col-md-10 cmts-main-right">
+                                    <h5>Jiho Park</h5>
+                                    <p>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+                                    <div class="cmts">
+                                        <div class="col-md-6 cmnts-left">
+                                            <p>On Feb 22, 2022, 11:01</p>
                                         </div>
                                         <div class="col-md-6 cmnts-right">
                                             <a href="#">Reply</a>

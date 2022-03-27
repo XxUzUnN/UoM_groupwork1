@@ -1,6 +1,6 @@
-\<html>
+<html>
 <head>
-    <title>Nando's</title>
+    <title>Subway</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <meta content="Gourmet Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
@@ -12,17 +12,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     function hideURLbar() {
         window.scrollTo(0, 1);
     } </script>
-   
+
     <link href="css/bootstrap.css" media="all" rel='stylesheet' type='text/css'/>
- 
+
+
     <link href="css/style.css" media="all" rel='stylesheet' type='text/css'/>
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
 
+
     <link href='http://fonts.useso.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700,800'
           rel='stylesheet' type='text/css'>
     <link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet' type='text/css'>
-  
+
     <link href="css/component.css" rel="stylesheet" type="text/css"/>
 </head>
 <body class="cbp-spmenu-push">
@@ -47,6 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 </div>
 
+
 <div class="blog">
     <div class="container">
         <div class="blog-content">
@@ -57,33 +60,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="blog-artical-info">
                                 <ul class="product-head">
                                     <li><a href="index.html">Home</a> <span>::</span></li>
-                                    <li class="active-page">Nando's</li>
+                                    <li class="active-page">Subway</li>
                                     <div class="clear"></div>
                                 </ul>
 
                                 <div class="blog-artical-info-head single-head">
-                                    <h2>Nando's</h2>
+                                    <h2>Subway</h2>
 
                                 </div>
                                 <div class="blog-artical-info-img single-head-img">
-                                    <img alt="image" src="images/Nando.png">
+                                    <img alt="image" src="images/subway.png">
                                 </div>
 
                                 <div class="blog-artical-info-text">
-                                    <p>Flame-grilled, juicy, spicy... there’s a reason Nando’s chicken is legendary.
-                                        Always fresh and never frozen, we marinate our chicken in PERi-PERi for 24 hours
-                                        before it’s basted.
-                                        All our sauces, bastes and marinades are made with fresh, real ingredients and
-                                        have no artificial flavours or colourants.
-                                        We flame-grill because it reduces the fat content and regular basting is what
-                                        keeps it so succulent.</p>
-                                    <p>And now for the fun part, the PERi-ometer. We’re all about choice – you control
-                                        how hot you want it.
-                                        So whether you like your spice Extra Hot, Medium or Plain...ish, there’s
-                                        something for every spice level.
-                                        Keep an eye out for our seasonal guest spices like Mango & Lime, Spiced
-                                        Clementine or Garlic BBQ – there for a good time, not a long time..</p>
-                                    <p>https://www.nandos.co.uk/about-us/food</p>
+                                    <p>At your local Subway when we say you can Make It What You Want, we really mean
+                                        it.
+                                        Create your own sub, salad or wrap and fill it with everything that you love.
+                                        Fancy something meaty but want to hold off on the olives? Sure.
+                                        Want to turn up the heat with extra hot sauce? No problem. Want extra cheese on
+                                        top of extra cheese? If that’s what you like!
+                                        Choose from our delicious range of meats or plant-based alternatives, topped
+                                        with tasty cheeses, freshly cut veggies, and finished with a choice of our
+                                        signature sauces.</p>
+                                    <p>All Subway stores are independently owned with talented Sandwich Artists™ ready
+                                        to take your order in-store,
+                                        for collection via our Subcard app, or delivered straight to your home via our
+                                        friends over at Just Eat, Uber Eats or Deliveroo.
+                                        So go meaty, go plant-based, go spicy, go saucy, or just go ALL OUT.</p>
+                                    <p>https://restaurants.subway.com/united-kingdom/</p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
@@ -106,10 +110,48 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                                 <div class="col-md-10 cmts-main-right">
                                     <h5>Xinyu Li</h5>
-                                    <p>aaaaaaaaaaaaaaaaaaaaaaaa</p>
+                                    <p>aaaaaaaaaaaaaaaaaaaa</p>
                                     <div class="cmts">
                                         <div class="col-md-6 cmnts-left">
-                                            <p>On March 8, 2022, 9:15</p>
+                                            <p>On Mar 15, 2022, 03:15</p>
+                                        </div>
+                                        <div class="col-md-6 cmnts-right">
+                                            <a href="#">Reply</a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="comments-main">
+                                <div class="col-md-2 cmts-main-left">
+                                    <img alt="" src="images/t3.jpg">
+                                </div>
+                                <div class="col-md-10 cmts-main-right">
+                                    <h5>Jiho Park</h5>
+                                    <p>bbbbbbbbbbbbbbbbbbbbbbbb</p>
+                                    <div class="cmts">
+                                        <div class="col-md-6 cmnts-left">
+                                            <p>On Mar 16, 2022, 13:15</p>
+                                        </div>
+                                        <div class="col-md-6 cmnts-right">
+                                            <a href="#">Reply</a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="comments-main">
+                                <div class="col-md-2 cmts-main-left">
+                                    <img alt="" src="images/t3.jpg">
+                                </div>
+                                <div class="col-md-10 cmts-main-right">
+                                    <h5>Zixun Zhou</h5>
+                                    <p>vvvvvvvvvvvvvvvvvv</p>
+                                    <div class="cmts">
+                                        <div class="col-md-6 cmnts-left">
+                                            <p>On Mar 22, 2022, 12:12</p>
                                         </div>
                                         <div class="col-md-6 cmnts-right">
                                             <a href="#">Reply</a>
@@ -137,7 +179,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li><a class="current" href="#">NEXT</a></li>
                         </ul>
                     </div>
-                
+
                 </div>
                 <div class="blog-content-right">
                     <div class="b-search">
@@ -147,33 +189,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <input type="submit" value="">
                         </form>
                     </div>
-                  
+
                     <div class="menu">
                         <h3>ROCOMMEND</h3>
                         <br>
-                        <b>PERI-PERI CHICKEN</b><br>
-                        CHICKEN BUTTERFLY<br>
-                        4 BONELESS CHICKEN THIGHS<BR>
-                        1/2 CHICKEN<BR>
-                        WHOLE CHICKEN<BR>
+                        <b>SUBS</b><br>
+                        T.L.C.<br>
+                        ITALIAN B.M.T.<BR>
+                        STEAK&CHEESE<BR>
+                        TUNA<BR>
+                        HAM<BR>
+                        TURKEY BREAST<BR>
+
 
                         <br>
-                        <b>BURGERS</b><br>
-                        SUNSET BURGER<br>
-                        GRILLED CHICKEN BURGER<br>
-                        DOUBLE CHICKEN BURGER<br>
+                        <b>WRAPS</b><br>
+                        T.L.C.<br>
+                        ITALIAN B.M.T.<BR>
+                        STEAK&CHEESE<BR>
+                        TUNA<BR>
+                        HAM<BR>
+                        TURKEY BREAST<BR>
                         <br>
 
-                        <b>SHARING PLATTERS</b><br>
-                        FULL PLATTER<br>
-                        BONELESS PLATTER<BR>
-                        FAMILY PLATTER<br>
+                        <b>HOT SIDES</b><br>
+                        HASH BROWNS<br>
+                        DORITOS<BR>
+                        WEDGES<br>
                         <br>
-                        <b>SIDES</b><br>
-                        CHIPS<BR>
-                        COLESLAW<BR>
-                        CREAMY MASH<BR>
-                        SPICY RICE<BR>
+
 
                         <BR>
 
@@ -181,13 +225,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="detials"></div>
                     <h3>DETAILS</h3>
                     <b>menu</b><br>
-                    https://www.nandos.co.uk/about-us/food<br>
+                    https://www.subway.com/en-GB/MenuNutrition<br>
                     <br>
                     <b>address</b><br>
-                    Oxford Rd The Quad, Manchester M1 5QS<br>
+                    149 Oxford Rd, Manchester M1 7EE<br>
                     <br>
                     <b>contect us</b><br>
-                    +441612365600<BR>
+                    +441612743160<BR>
                     <BR>
 
 
@@ -197,8 +241,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
     </div>
-  
+
 </div>
 
 </body>
+</html>
 </html>

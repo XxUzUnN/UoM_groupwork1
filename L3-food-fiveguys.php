@@ -93,53 +93,96 @@
                         </div>
                         <div class="reply">
                             <h4>Leave Your Reply</h4>
-                            <input onblur="if (this.value == '') {this.value = 'Name';}" onfocus="this.value = '';" type="text"
-                                   value="Name"/>
-                            <input onblur="if (this.value == '') {this.value = 'Email';}" onfocus="this.value = '';" type="text"
-                                   value="Email"/>
-                            <textarea onblur="if (this.value == '') {this.value = 'Reply';}" onfocus="this.value = '';"
-                                      value="reply">Comment</textarea>
-                            <input type="submit" value="SUBMIT"/>
+                            <form method="POST">
+                                <input onblur="if (this.value == '') {this.value = 'Name';}" onfocus="this.value = '';" type="text" id="username" name="username" value="Name">
+                                <input onblur="if (this.value == '') {this.value = 'Email';}" onfocus="this.value = '';" type="text" id="email" name="email" value="Name">
+                                <textarea onblur="if (this.value == '') {this.value = 'Reply';}" onfocus="this.value = '';" type="text" id="content" name="content">Comment</textarea>
+                                <input type="submit" value="Submit"/>
+                            </form>
+
+                            <!--
+                            <form method="ABC">
+                                <div class="rate">
+                                    <input type="radio" id="star5" name="rate" value="5" />
+                                    <label for="star5" title="rate">5 stars</label>
+                                    <input type="radio" id="star4" name="rate" value="4" />
+                                    <label for="star4" title="rate">4 stars</label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" title="rate">3 stars</label>
+                                    <input type="radio" id="star2" name="rate" value="2" />
+                                    <label for="star2" title="rate">2 stars</label>
+                                    <input type="radio" id="star1" name="rate" value="1" />
+                                    <label for="star1" title="rate">1 star</label>
+                                </div>
+                            </form>
+                            -->
                         </div>
+                        
+                        
+                        <?php
+                            function registerComment(){
+                                $un = $_POST['username'];
+                                $em = $_POST['email'];
+                                $cm = $_POST['content'];
+                                $time = date('Y-m-d H:i:s');
+
+                                $sql = "INSERT INTO fiveguys (username, email, content, commentTime)
+                                        VALUES (:userId, :userEmail, :userContent, :userCommentTime)";
+
+                                $pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+                                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+                                $stmt = $pdo->prepare($sql);
+                                $stmt->execute([
+                                    'userId' => $un,
+                                    'userEmail' => $em,
+                                    'userContent' => $cm,
+                                    'userCommentTime' => $time
+                                ]);
+                            }
+
+                            function showComments(){
+                                        
+                                $sql = "SELECT * FROM fiveguys ORDER BY commentTime DESC";
+                            
+                                $pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+                                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+                                
+                                foreach ($pdo->query($sql) as $row){
+                                    echo '<div class="comments-main">';
+                                    echo '  <div class="col-md-10 cmts-main-right">';
+                                    echo ("     <h5>{$row['username']}&nbsp&nbsp&nbsp&nbsp{$row['email']}</h5>");
+                                    echo ("     <p>{$row['content']}");
+                                    echo '      <div class="cmts">';
+                                    echo '          <div class="col-md-6 cmnts-left">';
+                                    echo ("              <p>{$row['commentTime']}</p>");
+                                    echo '          </div>';
+                                    echo '          <div class="clearfix"></div>';
+                                    echo '      </div>';
+                                    echo '  </div>';
+                                    echo '  <div class="clearfix"></div>';
+                                    echo '</div>';
+                                }
+                            }
+                        ?>
+
                         <div class="comments">
                             <h4>COMMENTS</h4>
-                            <div class="comments-main">
-                                <div class="col-md-2 cmts-main-left">
-                                    <img alt="" src="">
-                                </div>
-                                <div class="col-md-10 cmts-main-right">
-                                    <h5>Zixun Zhou</h5>
-                                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                                    <div class="cmts">
-                                        <div class="col-md-6 cmnts-left">
-                                            <p>On Feb 20, 2022, 18:01</p>
-                                        </div>
-                                        <div class="col-md-6 cmnts-right">
-                                            <a href="#">Reply</a>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
+                                    <?php
+                                        if (empty($_POST)){
+                                            showComments();
+                                        }
+                                        else{
+                                            registerComment();
+                                            showComments();
+                                        }
+                                    ?>
                                 <div class="clearfix"></div>
-                            </div>
                         </div>
                     </div>
 
 
-                    <div class="blog-pagenat">
-                        <ul class="dc_pagination dc_paginationA dc_paginationA06">
-                            <li><a class="current" href="#">Prev</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">19</a></li>
-                            <li><a href="#">20</a></li>
-                            <li><a class="current" href="#">NEXT</a></li>
-                        </ul>
-                    </div>
 
                 </div>
                 <div class="blog-content-right">
@@ -162,8 +205,8 @@
                         veggie sandwich<br>
                         cheese veggie sandwich<br>
                         grilled cheese<br>
-
                     </div>
+
                     <div class="detials">
                         <h3>DETAILS</h3>
                         <b>menu</b><br>
