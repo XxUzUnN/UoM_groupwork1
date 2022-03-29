@@ -106,53 +106,79 @@
                         </div>
                         <div class="reply">
                             <h4>Leave Your Reply</h4>
-                            <input onblur="if (this.value == '') {this.value = 'Name';}" onfocus="this.value = '';" type="text"
-                                   value="Name"/>
-                            <input onblur="if (this.value == '') {this.value = 'Email';}" onfocus="this.value = '';" type="text"
-                                   value="Email"/>
-                            <textarea onblur="if (this.value == '') {this.value = 'Reply';}" onfocus="this.value = '';"
-                                      value="reply">Comment</textarea>
-                            <input type="submit" value="SUBMIT"/>
+                            <form method="POST">
+                                <input onblur="if (this.value == '') {this.value = 'Name';}" onfocus="this.value = '';" type="text" id="username" name="username" value="Name">
+                                <input onblur="if (this.value == '') {this.value = 'Email';}" onfocus="this.value = '';" type="text" id="email" name="email" value="Name">
+                                <textarea onblur="if (this.value == '') {this.value = 'Reply';}" onfocus="this.value = '';" type="text" id="content" name="content">Comment</textarea>
+                                <input type="submit" value="Submit"/>
+                            </form>
                         </div>
+                        
+                        
+                        <?php
+                            function registerComment(){
+                                $un = $_POST['username'];
+                                $em = $_POST['email'];
+                                $cm = $_POST['content'];
+                                $time = date('Y-m-d H:i:s');
+
+                                $sql = "INSERT INTO fiveguys (username, email, content, commentTime)
+                                        VALUES (:userId, :userEmail, :userContent, :userCommentTime)";
+
+                                $pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+                                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+                                $stmt = $pdo->prepare($sql);
+                                $stmt->execute([
+                                    'userId' => $un,
+                                    'userEmail' => $em,
+                                    'userContent' => $cm,
+                                    'userCommentTime' => $time
+                                ]);
+                            }
+
+                            function showComments(){
+                                        
+                                $sql = "SELECT * FROM fiveguys ORDER BY commentTime DESC";
+                            
+                                $pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+                                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+                                
+                                foreach ($pdo->query($sql) as $row){
+                                    echo '<div class="comments-main">';
+                                    echo '  <div class="col-md-10 cmts-main-right">';
+                                    echo ("     <h5>{$row['username']}&nbsp&nbsp&nbsp&nbsp{$row['email']}</h5>");
+                                    echo ("     <p>{$row['content']}");
+                                    echo '      <div class="cmts">';
+                                    echo '          <div class="col-md-6 cmnts-left">';
+                                    echo ("              <p>{$row['commentTime']}</p>");
+                                    echo '          </div>';
+                                    echo '          <div class="clearfix"></div>';
+                                    echo '      </div>';
+                                    echo '  </div>';
+                                    echo '  <div class="clearfix"></div>';
+                                    echo '</div>';
+                                }
+                            }
+                        ?>
+
                         <div class="comments">
                             <h4>COMMENTS</h4>
-                            <div class="comments-main">
-                                <div class="col-md-2 cmts-main-left">
-                                    <img alt="" src="">
-                                </div>
-                                <div class="col-md-10 cmts-main-right">
-                                    <h5>Zixun Zhou</h5>
-                                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                                    <div class="cmts">
-                                        <div class="col-md-6 cmnts-left">
-                                            <p>On Feb 20, 2022, 18:01</p>
-                                        </div>
-                                        <div class="col-md-6 cmnts-right">
-                                            <a href="#">Reply</a>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
+                                    <?php
+                                        if (empty($_POST)){
+                                            showComments();
+                                        }
+                                        else{
+                                            registerComment();
+                                            showComments();
+                                        }
+                                    ?>
                                 <div class="clearfix"></div>
-                            </div>
                         </div>
                     </div>
 
 
-                    <div class="blog-pagenat">
-                        <ul class="dc_pagination dc_paginationA dc_paginationA06">
-                            <li><a class="current" href="#">Prev</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">19</a></li>
-                            <li><a href="#">20</a></li>
-                            <li><a class="current" href="#">NEXT</a></li>
-                        </ul>
-                    </div>
 
                 </div>
                 <div class="blog-content-right">
@@ -161,62 +187,54 @@
                     <div class="menu">
                         <h3>RECOMMEND</h3>
                         <br>
-                        <b>DRINKS</b><br>
-                        MOCHA<br>
-                        AMERICANO<BR>
-                        ESPRESSO<BR>
-                        WHITE CHOC MOCHA<BR>
+                        <b>DOGS</b><br>
+                        hot dogs<BR>
+                        cheese dogs<br>
                         <br>
-                        <b>SMOOTHIES</b><br>
-                        BERRY MASTER<br>
-                        STRAWBANANA<br>
-                        CITRITIOUS<br>
-                        TROPICAL BREEZE<br>
-                        MANGO<br>
+                        <b>BURGERS</b><br>
+                        hamburger<br>
+                        cheeseburger<br>
+                        little hamburger<br>
+                        little cheeseburger<br>
                         <br>
-                        <b>MOCKTAILS</b><br>
-                        MOJITO<br>
-                        PINA COLADA<BR>
-                        PASSIONFRUIT CRUSH<br>
-                        <br>
-                        <b>GELATO SCOOPS</b><br>
-                        AMERICA CHERRY<BR>
-                        BLUBURRY MUFFIN<BR>
-                        MINT CRISP<BR>
-                        PISTACHIO<BR>
-                        RED VELVET<BR>
-                        BOUNTY<BR>
-                        NUTELLA<BR>
-                        <BR>
-                        <b>SUNDAES</b><br>
-                        STRAWBRRY CLOUD<BR>
-                        MINTY<BR>
-                        MR BROWN<BR>
-                        COOKIE SUNDA<BR>
-                        MANGO DREAMS<BR>
-
-                        <br>
+                        <b>SANDWICHES</b><br>
+                        veggie sandwich<br>
+                        cheese veggie sandwich<br>
+                        grilled cheese<br>
                     </div>
+
                     <div class="detials">
                         <h3>DETAILS</h3>
                         <b>menu</b><br>
-                        https://icestonegelato.co.uk<br>
+                        https://fiveguys.co.uk/menu/<br>
                         <br>
                         <b>address</b><br>
-                        131 Oxford Road,M1 7DY<br>
+                        University Green, M13 9GP<br>
                         <br>
                         <b>contect us</b><br>
-                        01274 744 826 (head office)<BR>
-                        <BR>
-                        info@icestonegelato.co.uk
+                        +441612733622
+
 
                     </div>
+
                 </div>
             </div>
-
         </div>
 
     </div>
+
 </div>
+
+<div class="copy-right-section">
+    <div id="footer">
+        <div class="container">
+            <div class="footer-grids">
+                    <p>Created by Jiho Park, Xinyu Li, Yining Du, Yuanye Dong, Zihao Chen and Zixun Zhou &copy 2022</p>	
+                <div class="clearfix"> </div>							
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

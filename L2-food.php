@@ -225,17 +225,14 @@
 
 
 		<div class="copy-right-section">
+			<div id="footer">
 				<div class="container">
 					<div class="footer-grids">
-							<div class="col-md-3 footer-grid contact-list">
-								<h3>Copyright</h3>
-									<ul>
-									<li>Created by The best group in University of Manchester &copy 2022</li>
-									</ul>
-							</div>	
+								<p>Created by Jiho Park, Xinyu Li, Yining Du, Yuanye Dong, Zihao Chen and Zixun Zhou &copy 2022</p>	
 						<div class="clearfix"> </div>							
 					</div>
 				</div>
+			</div>
 		</div>
 </body>
 </html>
