@@ -68,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                                 </div>
                                 <div class="blog-artical-info-img single-head-img">
-                                    <img alt="image" src="images/CafeNero.png">
+                                    <img alt="image" src="images/L3-drinks-cafenero.png">
                                 </div>
 
                                 <div class="blog-artical-info-text">

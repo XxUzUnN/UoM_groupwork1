@@ -69,7 +69,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                                 </div>
                                 <div class="blog-artical-info-img single-head-img">
-                                    <img alt="image" src="images/Sain.png">
+                                    <img alt="image" src="images/L3-groceries-sainsbury's.png">
                                 </div>
 
                                 <div class="blog-artical-info-text">
@@ -78,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         heart of what we do since our first store opened in 1869. Today, inspiring and
                                         delighting our customers with tasty food remains our priority.</p>
                                     <p>Our focus on great value food and convenient shopping, whether in-store or online
-                                        is supported by our brands – Argos, Habitat, Tu, Nectar and Sainsbury’s Bank.
+                                        is supported by our brands - Argos, Habitat, Tu, Nectar and Sainsbury’s Bank.
                                         Help everyone eat better. We know that food that is better for us is also better
                                         for the planet.</p>
                                     <p>This is why we have committed to develop and deliver healthy, sustainable diets

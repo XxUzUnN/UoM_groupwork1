@@ -1,29 +1,29 @@
+<!DOCTYPE HTML>
 <html>
 <head>
-<title>Coop</title>
+<title>Single</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Gourmet Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content="aaaaa" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' media="all" />
-
-
+<!-- bootstrap -->
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' media="all" />
+<!-- //bootstrap -->
+<!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
-
-
+<!--start-smoth-scrolling-->
+<!--webfonts-->
 	<link href='http://fonts.useso.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet' type='text/css'>
-
-	<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!--webfonts-->	
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
 </head>
 <body class="cbp-spmenu-push">
 
 
-
+<!--header-->
 	<div class="header-section2">
 			<div class="container">
 				<div class="header-top">
@@ -40,8 +40,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 	</div>
-
-
+<!--/header-->
+		<!-- Blog -->
 		<div class="blog">
 			<div class="container">
 				<div class="blog-content">
@@ -52,26 +52,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="blog-artical-info">
 								<ul class="product-head">
 									<li><a href="index.html">Home</a> <span>::</span></li>
-									<li class="active-page">Coop</li>
+									<li class="active-page">single</li>
 									<div class="clear"> </div>
 								</ul>
 
 								<div class="blog-artical-info-head single-head">
-								<h2>Co-op</h2>
+								<h2>ETIC MEHMET</h2>
 
 								</div>
 								<div class="blog-artical-info-img single-head-img">
-									 <img src="images/L3-groceries-coop.png" alt="image">
+									 <img src="images/L3-food-etci_mehmet.png" alt="image">
 								</div>
-
+								
 								<div class="blog-artical-info-text">
+									Etci Mehmet Steak & Burger House<br>
+<BR>
+By keeping the comfort of its customers ahead, without compromising on quality and taste, <BR>
+we shows our difference with carefully prepared meat and chicken products.<BR>
+We opened the finest Turkish steakhouse in Manchester at the end of 2018 followed by Liverpool and Birmingham in 2021.<BR>
+The whole team at Etçi Mehmet look forward to welcoming you.<BR>
 
-									<p>We're one of the world's largest consumer co-operatives, owned by millions of members. We're the UK's fifth biggest food retailer with more than 2,500 local, convenience and medium-sized stores.</p>
-									<p>We're also: the UK's number 1 funeral services provider, a major general insurer ,a growing legal services business </p>
-									<p>We exist to meet members' needs and stand up for the things they believe in.
-										So, the more successful we are, the more we can give back to you and your local community.
-										That's why we're different.</p>
-									<p>https://www.co-operative.coop/about-us/our-co-op</p>
+
 								</div>
 							</div>
 							<div class="clearfix"> </div>
@@ -87,14 +88,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<h4>COMMENTS</h4>
 								<div class="comments-main">
 									<div class="col-md-2 cmts-main-left">
-										<img src="images/t3.jpg" alt="">
+										<img src="" alt="">
 									</div>
 									<div class="col-md-10 cmts-main-right">
-										<h5>Jiho Park</h5>
-										<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+										<h5>Zixun Zhou</h5>
+										<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
 										<div class="cmts">
 											<div class="col-md-6 cmnts-left">
-												<p>On March 20, 2022, 18:01</p>
+												<p>On Feb 20, 2022, 18:01</p>
 											</div>
 											<div class="col-md-6 cmnts-right">
 												<a href="#">Reply</a>
@@ -106,8 +107,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 					</div>
-
-
+					
+					<!--start-blog-pagenate-->
 				<div class="blog-pagenat">
 					<ul class="dc_pagination dc_paginationA dc_paginationA06">
 					  <li><a href="#" class="current">Prev</a></li>
@@ -122,41 +123,89 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <li><a href="#" class="current">NEXT</a></li>
 		       		</ul>
 				</div>
-
-					</div>
+				<!--//End-blog-pagenate-->
+				</div>
 					<div class="blog-content-right">
-						<div class="b-search">
-							<form>
-								<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-								<input type="submit" value="">
-							</form>
-						</div>
 
-						<div class="menu">
+						<!--start-twitter-weight-->
+				<div class="menu">
+					<h3>RECOMMEND</h3>
+					<br>
+					<b>STARTERS</b><br>
+					hummus<BR>
+					cacik<BR>
+					<br>
+					<b>LAMB</b><br>
+					lamb chops 200-250gr<br>
+					NewYork lamb 200-250gr<br>
+					lamb chops milanese 4 piece<br>
+					lamb kafes 1-1.5kg<br>
+					<br>
+					<b>BURGERS</b><br>
+					chicken burger<br>
+					halloumi burger<br>
+					sujuk burger<br>
+					classic burger<br>
+					etci burger<br>
+					asado burger<br>
+					<br>
+					<b>STEAKS</b><br>
+					ribeye 200-250gr<br>
+					t-bone 40-600gr<br>
+					lokum 200-250gr<br>
+					dallas 450-600gr<br>
+					tomahawk 600gr<br>
+					gold tomahawk<br>
+					<br>
+					<b>SALAD</b><br>
+					rocket salad<br>
+					avocado salad<br>
+					halloumi salas<br>
+					beef salad<br>
 
 				</div>
-						<div class="detials">
+				<div class="detials">
 					<h3>DETAILS</h3>
-					<b>homepage</b><br>
-					https://www.coop.co.uk/<br>
-					<br>
+					<b>menu</b><br>
+					https://www.etcimehmet.co.uk/menu.html<br><br>
+					
 					<b>address</b><br>
-					Booth St W, Manchester M13 9GP <br>
+				Unit 4, The Quadrangle, Chester St, Manchester, M1 5QS<br>
 					<br>
 					<b>contect us</b><br>
-					+441612733770<BR>
-					<BR>
+					0161 228 3158
+
+
 
 
 				</div>
-
-
 
 				</div>
 			</div>
 		</div>
+		<!-- /Blog -->
 	</div>
+<!--/start-footer-->                                                             
+		<!--/start-footer-->                                                             
+		<div class="footer-section">
+				<div class="container">
+					<div class="footer-grids">
+						<div class="col-md-3 footer-grid bottom-nav">
 
-</div>
+
+							<div class="col-md-3 footer-grid brands">
+
+							</div>
+							<div class="col-md-3 footer-grid contact-list">
+
+									
+							</div>	
+						<div class="clearfix"> </div>							
+					</div>
+				</div>
+			</div>
+		<!--//End-foote-->
+
+
 </body>
 </html>

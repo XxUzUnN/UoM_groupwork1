@@ -68,7 +68,7 @@
 
                                 </div>
                                 <div class="blog-artical-info-img single-head-img">
-                                    <img alt="image" src="images/g1.jpg">
+                                    <img alt="image" src="images/L3-groceries-whlung.png">
                                 </div>
 
                                 <div class="blog-artical-info-text">

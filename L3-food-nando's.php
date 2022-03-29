@@ -66,24 +66,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                                 </div>
                                 <div class="blog-artical-info-img single-head-img">
-                                    <img alt="image" src="images/Nando.png">
+                                    <img alt="image" src="images/L3-food-nando's.png">
                                 </div>
 
                                 <div class="blog-artical-info-text">
-                                    <p>Flame-grilled, juicy, spicy... there’s a reason Nando’s chicken is legendary.
+                                    <p>Flame-grilled, juicy, spicy... there's a reason Nando's chicken is legendary.
                                         Always fresh and never frozen, we marinate our chicken in PERi-PERi for 24 hours
-                                        before it’s basted.
+                                        before it's basted.
                                         All our sauces, bastes and marinades are made with fresh, real ingredients and
                                         have no artificial flavours or colourants.
                                         We flame-grill because it reduces the fat content and regular basting is what
                                         keeps it so succulent.</p>
-                                    <p>And now for the fun part, the PERi-ometer. We’re all about choice – you control
+                                    <p>And now for the fun part, the PERi-ometer. We're all about choice - you control
                                         how hot you want it.
-                                        So whether you like your spice Extra Hot, Medium or Plain...ish, there’s
+                                        So whether you like your spice Extra Hot, Medium or Plain...ish, there's
                                         something for every spice level.
                                         Keep an eye out for our seasonal guest spices like Mango & Lime, Spiced
-                                        Clementine or Garlic BBQ – there for a good time, not a long time..</p>
-                                    <p>https://www.nandos.co.uk/about-us/food</p>
+                                        Clementine or Garlic BBQ - there for a good time, not a long time..</p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>

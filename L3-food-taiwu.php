@@ -1,10 +1,9 @@
 <html>
 <head>
-    <title>Subway</title>
+    <title>Tai Wu</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-    <meta content="Gourmet Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" name="keywords"/>
+    <meta content="aaaaa" name="keywords"/>
     <script type="application/x-javascript"> addEventListener("load", function () {
         setTimeout(hideURLbar, 0);
     }, false);
@@ -60,34 +59,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="blog-artical-info">
                                 <ul class="product-head">
                                     <li><a href="index.html">Home</a> <span>::</span></li>
-                                    <li class="active-page">Subway</li>
+                                    <li class="active-page">Tai Wu</li>
                                     <div class="clear"></div>
                                 </ul>
 
                                 <div class="blog-artical-info-head single-head">
-                                    <h2>Subway</h2>
+                                    <h2>Tai Wu</h2>
 
                                 </div>
                                 <div class="blog-artical-info-img single-head-img">
-                                    <img alt="image" src="images/L3-food-subway.png">
+                                    <img alt="image" src="images/L3-food-taiwu.png">
                                 </div>
 
                                 <div class="blog-artical-info-text">
-                                    <p>At your local Subway when we say you can Make It What You Want, we really mean
-                                        it.
-                                        Create your own sub, salad or wrap and fill it with everything that you love.
-                                        Fancy something meaty but want to hold off on the olives? Sure.
-                                        Want to turn up the heat with extra hot sauce? No problem. Want extra cheese on
-                                        top of extra cheese? If that’s what you like!
-                                        Choose from our delicious range of meats or plant-based alternatives, topped
-                                        with tasty cheeses, freshly cut veggies, and finished with a choice of our
-                                        signature sauces.</p>
-                                    <p>All Subway stores are independently owned with talented Sandwich Artists™ ready
-                                        to take your order in-store,
-                                        for collection via our Subcard app, or delivered straight to your home via our
-                                        friends over at Just Eat, Uber Eats or Deliveroo.
-                                        So go meaty, go plant-based, go spicy, go saucy, or just go ALL OUT.</p>
-                                    <p>https://restaurants.subway.com/united-kingdom/</p>
+                                    The Chinese Restaurant is located in the South campus of the University of
+                                    Manchester, five minutes' walk from the teaching building on the south campus.
+                                    Downstairs is Whlung, a Chinese supermarket, which is convenient for shopping and
+                                    eating.
+                                    This restaurant also provides large celebration service during holidays and daily
+                                    parking service.
+
                                 </div>
                             </div>
                             <div class="clearfix"></div>
@@ -106,52 +97,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <h4>COMMENTS</h4>
                             <div class="comments-main">
                                 <div class="col-md-2 cmts-main-left">
-                                    <img alt="" src="images/t3.jpg">
-                                </div>
-                                <div class="col-md-10 cmts-main-right">
-                                    <h5>Xinyu Li</h5>
-                                    <p>aaaaaaaaaaaaaaaaaaaa</p>
-                                    <div class="cmts">
-                                        <div class="col-md-6 cmnts-left">
-                                            <p>On Mar 15, 2022, 03:15</p>
-                                        </div>
-                                        <div class="col-md-6 cmnts-right">
-                                            <a href="#">Reply</a>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="comments-main">
-                                <div class="col-md-2 cmts-main-left">
-                                    <img alt="" src="images/t3.jpg">
-                                </div>
-                                <div class="col-md-10 cmts-main-right">
-                                    <h5>Jiho Park</h5>
-                                    <p>bbbbbbbbbbbbbbbbbbbbbbbb</p>
-                                    <div class="cmts">
-                                        <div class="col-md-6 cmnts-left">
-                                            <p>On Mar 16, 2022, 13:15</p>
-                                        </div>
-                                        <div class="col-md-6 cmnts-right">
-                                            <a href="#">Reply</a>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="comments-main">
-                                <div class="col-md-2 cmts-main-left">
-                                    <img alt="" src="images/t3.jpg">
+                                    <img alt="" src="">
                                 </div>
                                 <div class="col-md-10 cmts-main-right">
                                     <h5>Zixun Zhou</h5>
-                                    <p>vvvvvvvvvvvvvvvvvv</p>
+                                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
                                     <div class="cmts">
                                         <div class="col-md-6 cmnts-left">
-                                            <p>On Mar 22, 2022, 12:12</p>
+                                            <p>On Feb 20, 2022, 18:01</p>
+                                        </div>
+                                        <div class="col-md-6 cmnts-right">
+                                            <a href="#">Reply</a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="comments-main">
+                                <div class="col-md-2 cmts-main-left">
+                                    <img alt="" src="">
+                                </div>
+                                <div class="col-md-10 cmts-main-right">
+                                    <h5>Jiho Park</h5>
+                                    <p>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+                                    <div class="cmts">
+                                        <div class="col-md-6 cmnts-left">
+                                            <p>On Feb 22, 2022, 11:01</p>
                                         </div>
                                         <div class="col-md-6 cmnts-right">
                                             <a href="#">Reply</a>
@@ -182,68 +154,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                 </div>
                 <div class="blog-content-right">
-                    <div class="b-search">
-                        <form>
-                            <input onblur="if (this.value == '') {this.value = 'Search';}" onfocus="this.value = '';" type="text"
-                                   value="Search">
-                            <input type="submit" value="">
-                        </form>
-                    </div>
+
 
                     <div class="menu">
-                        <h3>ROCOMMEND</h3>
+                        <h3>RECOMMEND</h3>
                         <br>
-                        <b>SUBS</b><br>
-                        T.L.C.<br>
-                        ITALIAN B.M.T.<BR>
-                        STEAK&CHEESE<BR>
-                        TUNA<BR>
-                        HAM<BR>
-                        TURKEY BREAST<BR>
-
-
+                        <b>APPETISERS</b><br>
+                        spring rolls<br>
                         <br>
-                        <b>WRAPS</b><br>
-                        T.L.C.<br>
-                        ITALIAN B.M.T.<BR>
-                        STEAK&CHEESE<BR>
-                        TUNA<BR>
-                        HAM<BR>
-                        TURKEY BREAST<BR>
+                        <b>DISHES</b><br>
+                        crispy chicken with different sauces<br>
+                        chicken with different sauces<br>
+                        chow mein<br>
+                        omelette<br>
+                        fired rice<br>
                         <br>
-
-                        <b>HOT SIDES</b><br>
-                        HASH BROWNS<br>
-                        DORITOS<BR>
-                        WEDGES<br>
+                        <b>SOUP</b><br>
+                        hot and sour soup<br>
+                        chicken soup<br>
                         <br>
+                        <b>SNACK BOX</b><br>
+                        chicken balls + bbq ribs/sausages+one sides + one drinks
+                        <br>
+                    </div>
 
+                    <div class="detials">
+                        <h3>DETAILS</h3>
+                        <b>menu</b><br>
+                        https://www.taiwu.co.uk/menu<br>
+                        <br>
+                        <b>address</b><br>
+                        81 - 97 Upper Brook Street M13 9TX<br>
+                        <br>
+                        <b>contect us</b><br>
+                        028 9622 7521
 
-                        <BR>
 
                     </div>
-                    <div class="detials"></div>
-                    <h3>DETAILS</h3>
-                    <b>menu</b><br>
-                    https://www.subway.com/en-GB/MenuNutrition<br>
-                    <br>
-                    <b>address</b><br>
-                    149 Oxford Rd, Manchester M1 7EE<br>
-                    <br>
-                    <b>contect us</b><br>
-                    +441612743160<BR>
-                    <BR>
-
 
                 </div>
-
-
             </div>
         </div>
+
     </div>
 
 </div>
-
 </body>
-</html>
 </html>

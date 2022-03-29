@@ -290,7 +290,7 @@ a.button.rotate2:hover{
 }
  /*------start-slider-------*/
  #testimonials{
-	background:url(../images/slide.jpg) repeat-y;
+	background:url(../images/L1-slide.png) repeat-y;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-o-background-size:cover;
@@ -407,6 +407,13 @@ font-size: 2.6em;
 }
 .featured-main {
 	padding-top: 1.2em;
+}
+.featured-section h1 {
+	color: #929292;
+	font-size:4em;
+	margin: 0 0 9px 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 }
 .featured-section h2 {
 	color: #929292;
@@ -1968,7 +1975,7 @@ ul.soc_icons2 li {
 	min-height: 213px;
 	}
 	#testimonials {
-	background: url(../images/slide.jpg) repeat-y;
+	background: url(../images/L1-slide.png) repeat-y;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
@@ -2600,7 +2607,7 @@ ul.soc_icons2 li {
 	  margin-top: 0em;
 	}
 	#testimonials {
-	background: url(../images/slide.jpg) repeat-y;
+	background: url(../images/L1-slide.png) repeat-y;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;

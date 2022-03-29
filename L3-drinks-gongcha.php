@@ -69,7 +69,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                                 </div>
                                 <div class="blog-artical-info-img single-head-img">
-                                    <img alt="image" src="images/Gongcha.png">
+                                    <img alt="image" src="images/L3-drinks-gongcha.png">
                                 </div>
 
                                 <div class="blog-artical-info-text">

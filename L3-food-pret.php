@@ -1,29 +1,30 @@
+<!DOCTYPE HTML>
 <html>
 <head>
-<title>Coop</title>
+<title>Single</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Gourmet Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-
-	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' media="all" />
-
-
+<!-- bootstrap -->
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' media="all" />
+<!-- //bootstrap -->
+<!-- Custom Theme files -->
 <link href="css/style.css" rel='stylesheet' type='text/css' media="all" />
 <script src="js/jquery-1.8.3.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
-
-
+<!--start-smoth-scrolling-->
+<!--webfonts-->
 	<link href='http://fonts.useso.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet' type='text/css'>
-
-	<link href="css/component.css" rel="stylesheet" type="text/css"  />
+<!--webfonts-->
+<link href="css/component.css" rel="stylesheet" type="text/css"  />
 </head>
 <body class="cbp-spmenu-push">
 
 
-
+<!--header-->
 	<div class="header-section2">
 			<div class="container">
 				<div class="header-top">
@@ -40,8 +41,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 	</div>
-
-
+<!--/header-->
+		<!-- Blog -->
 		<div class="blog">
 			<div class="container">
 				<div class="blog-content">
@@ -52,26 +53,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="blog-artical-info">
 								<ul class="product-head">
 									<li><a href="index.html">Home</a> <span>::</span></li>
-									<li class="active-page">Coop</li>
+									<li class="active-page">single</li>
 									<div class="clear"> </div>
 								</ul>
 
 								<div class="blog-artical-info-head single-head">
-								<h2>Co-op</h2>
+								<h2>pret a manger</h2>
 
 								</div>
 								<div class="blog-artical-info-img single-head-img">
-									 <img src="images/L3-groceries-coop.png" alt="image">
+									 <img src="images/L3-food-pret.png" alt="image">
 								</div>
 
-								<div class="blog-artical-info-text">
+							<div class="blog-artical-info-text">
+									<p>Since opening our first shop in 1986, Pret's mission has been simple. To serve freshly made food and good organic coffee, whilst also trying to do the right thing.
+										That's why our food is handmade in our shop kitchens throughout the day and anything we don't sell, goes to charity.
+										That's also why our coffee is 100% organic (and always will be) and our Coffee Fund is supporting the next generation of farmers.
+										It's (partly) what we think makes Pret special. See our full menu for our delicious range of food and coffee.</p>
 
-									<p>We're one of the world's largest consumer co-operatives, owned by millions of members. We're the UK's fifth biggest food retailer with more than 2,500 local, convenience and medium-sized stores.</p>
-									<p>We're also: the UK's number 1 funeral services provider, a major general insurer ,a growing legal services business </p>
-									<p>We exist to meet members' needs and stand up for the things they believe in.
-										So, the more successful we are, the more we can give back to you and your local community.
-										That's why we're different.</p>
-									<p>https://www.co-operative.coop/about-us/our-co-op</p>
+									<p>https://www.pret.co.uk/en-GB/about-pret</p>
 								</div>
 							</div>
 							<div class="clearfix"> </div>
@@ -90,11 +90,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<img src="images/t3.jpg" alt="">
 									</div>
 									<div class="col-md-10 cmts-main-right">
-										<h5>Jiho Park</h5>
-										<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+										<h5>Bill Brown</h5>
+										<p>Vivamus congue turpis in augue pellentesque scelerisque. Pellentesque aliquam laoreet sem nec ultrices. Fusce blandit nunc vehicula massa vehicula tincidunt. Nam venenatis cursus urna sed gravida. Ut tincidunt elit ut quam malesuada consequat. Sed semper purus sit amet lorem elementum faucibus.</p>
 										<div class="cmts">
 											<div class="col-md-6 cmnts-left">
-												<p>On March 20, 2022, 18:01</p>
+												<p>On April 14, 2014, 18:01</p>
 											</div>
 											<div class="col-md-6 cmnts-right">
 												<a href="#">Reply</a>
@@ -107,7 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 					</div>
 
-
+					<!--start-blog-pagenate-->
 				<div class="blog-pagenat">
 					<ul class="dc_pagination dc_paginationA dc_paginationA06">
 					  <li><a href="#" class="current">Prev</a></li>
@@ -122,7 +122,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  <li><a href="#" class="current">NEXT</a></li>
 		       		</ul>
 				</div>
-
+				<!--//End-blog-pagenate-->
 					</div>
 					<div class="blog-content-right">
 						<div class="b-search">
@@ -131,20 +131,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<input type="submit" value="">
 							</form>
 						</div>
-
+						<!--start-twitter-weight-->
 						<div class="menu">
+					<h3>RECOMMEND</h3>
+					<br>
+					<b>HOT DRINKS</b><br>
+					CAPPUCCINO<br>
+					LATTE<BR>
+					BLACK AMERICANO<BR>
+					ESPRESSO<BR>
+
+					<br>
+					<b>BREAKFAST</b><br>
+					ALMOND CROISSANT<br>
+					CHOCOLATE CROISSANT<br>
+					CINNAMON DANISH<br>
+					<br>
+
+					<b>HOT FOOD</b><br>
+					PROPER PORRIDGE<br>
+					CHICKEN LAKSA SOUP<BR>
+					RED THAI VEG SOUP<br>
+					<br>
+					<b>FRUIT</b><br>
+					APPLE<BR>
+					BANANA<BR>
+
+
+					<BR>
 
 				</div>
-						<div class="detials">
+						<div class="detials"></div>
 					<h3>DETAILS</h3>
-					<b>homepage</b><br>
-					https://www.coop.co.uk/<br>
+					<b>menu</b><br>
+					https://www.pret.co.uk/en-GB/our-menu<br>
 					<br>
 					<b>address</b><br>
-					Booth St W, Manchester M13 9GP <br>
+					Manchester Business School Unit 8 University Green M13 9GP<br>
 					<br>
 					<b>contect us</b><br>
-					+441612733770<BR>
+					+44 161 273 1815<BR>
 					<BR>
 
 
@@ -155,8 +181,61 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 		</div>
+		<!-- /Blog -->
 	</div>
+<!--/start-footer-->
+		<!--/start-footer-->
+		<div class="footer-section">
+				<div class="container">
+					<div class="footer-grids">
+						<div class="col-md-3 footer-grid bottom-nav">
+							<h3>Information </h3>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="menu.html">Menu</a></li>
+									<li><a href="events.html">Events</a></li>
+									<li><a href="gallery.html">Gallery</a></li>
+									<li><a href="mail.html">Mail Us</a></li>
+									<div class="clearfix"> </div>
+								</ul>
+							</div>
+						<div class="col-md-3 footer-grid category">
+							<h3>Categories </h3>
+								<ul>
+									<li><a href="#">Proin at tellus quis</a> </li>
+									<li><a href="#">Felis tincidun</a>  </li>
+									<li><a href="#">Vestibulum</a> </li>
+									<li><a href="#">Sets</a> </li>
+									<li><a href="#">Praesent sit</a> </li>
+									<li><a href="#">Amet nulla molestie</a> </li>
 
-</div>
+									<div class="clearfix"> </div>
+								</ul>
+							</div>
+							<div class="col-md-3 footer-grid brands">
+								<h3>Menu </h3>
+									<ul>
+										<li><a href="#">Pellentesque</a>  </li>
+										<li><a href="#">Lorem ipsum dolor </a> </li>
+										<li><a href="#">Vestibulum pharetra</a> </li>
+										<li><a href="#">Donec eros dolor</li>
+										<div class="clearfix"> </a> </div>
+									</ul>
+							</div>
+							<div class="col-md-3 footer-grid contact-list">
+								 	 <h3>Contact</h3>
+											<ul>
+												<li>Tel:1(234) 567-8901</li>
+												<li>Tel:1(234) 567-8936</li>
+												<div class="clearfix"> </div>
+											</ul>
+
+							</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+		<!--//End-foote-->
+
 </body>
 </html>

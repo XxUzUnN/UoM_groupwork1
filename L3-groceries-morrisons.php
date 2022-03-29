@@ -68,7 +68,7 @@
 
                                 </div>
                                 <div class="blog-artical-info-img single-head-img">
-                                    <img alt="image" src="images/G2.jpg">
+                                    <img alt="image" src="images/L3-groceries-morrisons.png">
                                 </div>
 
                                 <div class="blog-artical-info-text">
