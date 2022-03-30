@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
+$servername = "dbhost.cs.man.ac.uk";
+$username = "t56091yd";
 $password = "12345687";
-$db = "mmyyddbb";
+$db = "2021_comp10120_r4";
 
 $conn = mysqli_connect($servername, $username, $password, $db);
 
