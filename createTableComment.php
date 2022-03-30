@@ -2,7 +2,7 @@
 include("connectDatabase.php");
 $sql = "CREATE TABLE Comment (
     commentId int unsigned auto_increment,
-    userName VARCHAR(30) not null unique,
+    userName VARCHAR(30) not null,
     userEmail VARCHAR(255) not null,
     userComment VARCHAR(255) not null,
     userCommentTime datetime DEFAULT null,
