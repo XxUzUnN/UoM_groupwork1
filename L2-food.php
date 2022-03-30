@@ -82,7 +82,7 @@
 									<?php
 										$sql = "SELECT facilityName FROM facility WHERE facilityId='1'";
 
-										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 										foreach ($pdo->query($sql) as $row){
@@ -103,7 +103,7 @@
 								<?php
 										$sql = "SELECT facilityName FROM facility WHERE facilityId='2'";
 
-										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 										foreach ($pdo->query($sql) as $row){
@@ -124,7 +124,7 @@
 								<?php
 										$sql = "SELECT facilityName FROM facility WHERE facilityId='3'";
 
-										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 										foreach ($pdo->query($sql) as $row){
@@ -145,7 +145,7 @@
 								<?php
 										$sql = "SELECT facilityName FROM facility WHERE facilityId='4'";
 
-										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 										foreach ($pdo->query($sql) as $row){
@@ -172,7 +172,7 @@
 								<?php
 										$sql = "SELECT facilityName FROM facility WHERE facilityId='5'";
 
-										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 										foreach ($pdo->query($sql) as $row){
@@ -193,7 +193,7 @@
 								<?php
 										$sql = "SELECT facilityName FROM facility WHERE facilityId='6'";
 
-										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 										foreach ($pdo->query($sql) as $row){
@@ -214,7 +214,7 @@
 								<?php
 										$sql = "SELECT facilityName FROM facility WHERE facilityId='7'";
 
-										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 										foreach ($pdo->query($sql) as $row){
@@ -235,7 +235,7 @@
 							<?php
 										$sql = "SELECT facilityName FROM facility WHERE facilityId='8'";
 
-										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 										foreach ($pdo->query($sql) as $row){
@@ -262,7 +262,7 @@
 								<?php
 										$sql = "SELECT facilityName FROM facility WHERE facilityId='9'";
 
-										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 										foreach ($pdo->query($sql) as $row){
@@ -283,7 +283,7 @@
 								<?php
 										$sql = "SELECT facilityName FROM facility WHERE facilityId='10'";
 
-										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 										foreach ($pdo->query($sql) as $row){
@@ -304,7 +304,7 @@
 								<?php
 										$sql = "SELECT facilityName FROM facility WHERE facilityId='11'";
 
-										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 										foreach ($pdo->query($sql) as $row){
@@ -325,7 +325,7 @@
 								<?php
 										$sql = "SELECT facilityName FROM facility WHERE facilityId='12'";
 
-										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 										foreach ($pdo->query($sql) as $row){
