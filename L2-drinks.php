@@ -70,16 +70,26 @@
 		<div class="featured-section">
 			<div class="review">
 				<div class="container">
-					<h1 class="text-center">DRINKS</h1>
+				<h1 class="text-center" style="font-size:75px; color:grey"><b>DRINKS</b></h1>
 					<br>
 					<br>
 					<div class = "foodCards">
 					
 						<div class="card" style = "margin-left: -200px">
-							<a href="L3-drinks-yifang.php">
+							<a style="text-decoration:none" href="L3-drinks-yifang.php">
 								<img src="images/L2-drink-yifang.png" style="width:100%">
 								<div class="container">
-									<h3 style="margin-left:60px"><b>Yi Fang</b></h3>
+								<?php
+										$sql = "SELECT facilityName FROM facility WHERE facilityId='13'";
+
+										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+                                		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+										foreach ($pdo->query($sql) as $row){
+											echo '<h3 style="margin-left:14px; margin-top:10px; font-size:35px">';
+											echo ("<b>{$row['facilityName']}</b></h3>");
+										}
+									?>
 								</div>
 							</a>
 						</div>
@@ -87,10 +97,20 @@
 						<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
 				
 						<div class="card">
-							<a href="L3-drinks-gongcha.php">
+							<a style="text-decoration:none" href="L3-drinks-gongcha.php">
 								<img src="images/L2-drinks-gongcha.png" style="width:100%">
 								<div class="container">
-									<h3 style="margin-left:60px"><b>Gong Cha</b></h3>
+								<?php
+										$sql = "SELECT facilityName FROM facility WHERE facilityId='14'";
+
+										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+                                		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+										foreach ($pdo->query($sql) as $row){
+											echo '<h3 style="margin-left:62px; margin-top:10px; font-size:35px">';
+											echo ("<b>{$row['facilityName']}</b></h3>");
+										}
+									?>
 								</div>
 							</a>
 						</div>
@@ -98,10 +118,20 @@
 						<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
 				
 						<div class="card">
-							<a href="L3-drinks-cafenero.php">
+							<a style="text-decoration:none" href="L3-drinks-cafenero.php">
 								<img src="images/L2-drinks-cafenero.png" style="width:100%">
 								<div class="container">
-									<h3 style="margin-left:60px"><b>Café Nero</b></h3>
+								<?php
+										$sql = "SELECT facilityName FROM facility WHERE facilityId='15'";
+
+										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+                                		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+										foreach ($pdo->query($sql) as $row){
+											echo '<h3 style="margin-left:68px; margin-top:10px; font-size:35px">';
+											echo ("<b>{$row['facilityName']}</b></h3>");
+										}
+									?>
 								</div>
 							</a>
 						</div>
@@ -109,10 +139,20 @@
 						<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
 				
 						<div class="card">
-							<a href="L3-drinks-icestone.php">
+							<a style="text-decoration:none" href="L3-drinks-icestone.php">
 								<img src="images/L2-drinks-icestone.png" style="width:100%">
 								<div class="container">
-									<h3 style="margin-left:60px"><b>Icestone</b></h3>
+								<?php
+										$sql = "SELECT facilityName FROM facility WHERE facilityId='16'";
+
+										$pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+                                		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+										foreach ($pdo->query($sql) as $row){
+											echo '<h3 style="margin-left:19px; margin-top:10px; font-size:35px">';
+											echo ("<b>{$row['facilityName']}</b></h3>");
+										}
+									?>
 								</div>
 							</a>
 						</div>

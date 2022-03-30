@@ -1,10 +1,58 @@
-\<html>
+<html>
 <head>
+
+    <style>
+        .flip-card {
+        background-color: transparent;
+        width: 250px;
+        height: 200px;
+        perspective: 1000px;
+        }
+
+        .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+        background-color: #bbb;
+        color: black;
+        }
+
+        .flip-card-back {
+        background-color: #990099;
+        color: white;
+        transform: rotateY(180deg);
+        }
+
+        #marker {
+        position: relative;
+        left:-2px;
+        top:-10px;
+        }
+
+    </style>
+
     <title>Nando's</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-    <meta content="Gourmet Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" name="keywords"/>
     <script type="application/x-javascript"> addEventListener("load", function () {
         setTimeout(hideURLbar, 0);
     }, false);
@@ -19,14 +67,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
 
-    <link href='http://fonts.useso.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700,800'
-          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet' type='text/css'>
   
     <link href="css/component.css" rel="stylesheet" type="text/css"/>
 </head>
 <body class="cbp-spmenu-push">
-
 
 
 <div class="header-section2">
@@ -36,16 +82,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="header-logo">
                 <a href="index.html"><img alt="" src="images/logo.png"/></a>
             </div>
-            <div class="search-form">
-                <form>
-                    <input onblur="if (this.value == '') {this.value = 'Search...';}" onfocus="this.value = '';" required=""
-                           type="text" value="Search...">
-                </form>
-            </div>
             <div class="clearfix"></div>
         </div>
     </div>
 </div>
+
 
 <div class="blog">
     <div class="container">
@@ -57,7 +98,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <div class="blog-artical-info">
                                 <ul class="product-head">
                                     <li><a href="index.html">Home</a> <span>::</span></li>
-                                    <li class="active-page">Nando's</li>
+                                    <li><a href="L2-food.php">Food</a> <span>::</span></li>
+                                    <li class="active-page"><a href="L3-food-nando's.php">Nando's</a></li>
                                     <div class="clear"></div>
                                 </ul>
 
@@ -70,23 +112,102 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
 
                                 <div class="blog-artical-info-text">
-                                    <p>Flame-grilled, juicy, spicy... there's a reason Nando's chicken is legendary.
+                                    <p>
+                                        Flame-grilled, juicy, spicy... there's a reason Nando's chicken is legendary.
                                         Always fresh and never frozen, we marinate our chicken in PERi-PERi for 24 hours
                                         before it's basted.
                                         All our sauces, bastes and marinades are made with fresh, real ingredients and
                                         have no artificial flavours or colourants.
                                         We flame-grill because it reduces the fat content and regular basting is what
-                                        keeps it so succulent.</p>
-                                    <p>And now for the fun part, the PERi-ometer. We're all about choice - you control
+                                        keeps it so succulent.
+                                    </p>
+                                    <p>
+                                        And now for the fun part, the PERi-ometer. We're all about choice - you control
                                         how hot you want it.
                                         So whether you like your spice Extra Hot, Medium or Plain...ish, there's
                                         something for every spice level.
                                         Keep an eye out for our seasonal guest spices like Mango & Lime, Spiced
-                                        Clementine or Garlic BBQ - there for a good time, not a long time..</p>
+                                        Clementine or Garlic BBQ - there for a good time, not a long time.
+                                    </p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
+
+                        <span style="font-size: 30px;">Recommended Dishes</span> <span id="marker" style="color: grey; font-size: 20px;">*</span>
+                        <br>
+                        <p style="color:grey; font-size:8px;">*The ingredients/allergen list provided are all from the official website of the relative resaurant. The final interpretation of this list belongs to the relative resaurant. EAT shall not be held responsible for the content of the lists.</p>
+                        <br>
+
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <?php
+                                    $sql = "SELECT dishName, dishIngredients FROM Dish WHERE dishId='4'";
+
+                                    $pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
+                                	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+                                    foreach ($pdo->query($sql) as $row){
+                                        echo '<div class="flip-card-front">';
+                                        echo ' <h2 style=" margin-top:70px">';
+                                        echo ("<b>{$row['dishName']}</b></h2>");
+                                        echo '</div>';
+                                        echo '<div class="flip-card-back">';
+                                        echo '  <h2>Allergen list</h2>';
+                                        echo '  <p style="margin-top:40px">';
+                                        echo (" {$row['dishIngredients']}</p>");
+                                        echo '</div>';
+                                    }
+                                ?>
+                            </div>
+                        </div>                        
+
+                        <div class="flip-card" style="position:relative; margin-left:280px; margin-top: -200px">
+                            <div class="flip-card-inner">
+                                <?php
+                                    $sql = "SELECT dishName, dishIngredients FROM Dish WHERE dishId='5'";
+
+                                    $pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
+                                	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+                                    foreach ($pdo->query($sql) as $row){
+                                        echo '<div class="flip-card-front">';
+                                        echo ' <h2 style=" margin-top:82px">';
+                                        echo ("<b>{$row['dishName']}</b></h2>");
+                                        echo '</div>';
+                                        echo '<div class="flip-card-back">';
+                                        echo '  <h2>Allergen list</h2>';
+                                        echo '  <p style="margin-top:40px">';
+                                        echo (" {$row['dishIngredients']}</p>");
+                                        echo '</div>';
+                                    }
+                                ?>
+                            </div>
+                        </div>
+
+                        <div class="flip-card" style="position:relative; margin-left:560px; margin-top: -200px">
+                            <div class="flip-card-inner">
+                                <?php
+                                    $sql = "SELECT dishName, dishIngredients FROM Dish WHERE dishId='6'";
+
+                                    $pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
+                                	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+                                    foreach ($pdo->query($sql) as $row){
+                                        echo '<div class="flip-card-front">';
+                                        echo ' <h2 style=" margin-top:50px">';
+                                        echo ("<b>{$row['dishName']}</b></h2>");
+                                        echo '</div>';
+                                        echo '<div class="flip-card-back">';
+                                        echo '  <h2>Allergen list</h2>';
+                                        echo '  <p style="margin-top:40px">';
+                                        echo (" {$row['dishIngredients']}</p>");
+                                        echo '</div>';
+                                    }
+                                ?>
+                            </div>
+                        </div>
+
                         <div class="reply">
                             <h4>Leave Your Reply</h4>
                             <form method="POST">
@@ -97,18 +218,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </form>
                         </div>
                         
-                        
                         <?php
                             function registerComment(){
                                 $un = $_POST['username'];
                                 $em = $_POST['email'];
                                 $cm = $_POST['content'];
                                 $time = date('Y-m-d H:i:s');
+                                $id = 2;
 
-                                $sql = "INSERT INTO fiveguys (username, email, content, commentTime)
-                                        VALUES (:userId, :userEmail, :userContent, :userCommentTime)";
+                                $sql = "INSERT INTO Comment (userName, userEmail, userComment, userCommentTime, facilityId)
+                                        VALUES (:userId, :userEmail, :userContent, :userCommentTime, :id)";
 
-                                $pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+                                $pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
                                 $stmt = $pdo->prepare($sql);
@@ -116,32 +237,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     'userId' => $un,
                                     'userEmail' => $em,
                                     'userContent' => $cm,
-                                    'userCommentTime' => $time
+                                    'userCommentTime' => $time,
+                                    'id' => $id
                                 ]);
                             }
 
                             function showComments(){
                                         
-                                $sql = "SELECT * FROM fiveguys ORDER BY commentTime DESC";
+                                $sql = "SELECT * FROM Comment WHERE facilityId='2' ORDER BY userCommentTime DESC";
                             
-                                $pdo = new pdo('mysql:host=localhost;dbname=mmyyddbb', 'root', '12345687');
+                                $pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
+                                $dbc = mysqli_connect('dbhost.cs.man.ac.uk', 't56091yd', '12345687', '2021_comp10120_r4');
+                                $check=mysqli_query($dbc, $sql);
+                                $checkrows=mysqli_num_rows($check);
                                 
-                                foreach ($pdo->query($sql) as $row){
-                                    echo '<div class="comments-main">';
-                                    echo '  <div class="col-md-10 cmts-main-right">';
-                                    echo ("     <h5>{$row['username']}&nbsp&nbsp&nbsp&nbsp{$row['email']}</h5>");
-                                    echo ("     <p>{$row['content']}");
-                                    echo '      <div class="cmts">';
-                                    echo '          <div class="col-md-6 cmnts-left">';
-                                    echo ("              <p>{$row['commentTime']}</p>");
-                                    echo '          </div>';
-                                    echo '          <div class="clearfix"></div>';
-                                    echo '      </div>';
-                                    echo '  </div>';
-                                    echo '  <div class="clearfix"></div>';
-                                    echo '</div>';
+                                if ($checkrows == 0){
+                                    echo ("<p style='color:grey; text-align:center;'><i>There is no comment at the moment.</i></p>");
+                                }else{
+                                    foreach ($pdo->query($sql) as $row){
+                                        echo '<div class="comments-main">';
+                                        echo '  <div class="col-md-10 cmts-main-right">';
+                                        echo ("     <h5>{$row['userName']}&nbsp&nbsp&nbsp&nbsp{$row['userEmail']}</h5>");
+                                        echo ("     <p>{$row['userComment']}");
+                                        echo '      <div class="cmts">';
+                                        echo '          <div class="col-md-6 cmnts-left">';
+                                        echo ("              <p>{$row['userCommentTime']}</p>");
+                                        echo '          </div>';
+                                        echo '          <div class="clearfix"></div>';
+                                        echo '      </div>';
+                                        echo '  </div>';
+                                        echo '  <div class="clearfix"></div>';
+                                        echo '</div>';
+                                    }
                                 }
                             }
                         ?>
@@ -159,54 +288,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     ?>
                                 <div class="clearfix"></div>
                         </div>
+
                     </div>
-
-
-
                 </div>
                 <div class="blog-content-right">
-
-
-                    <div class="menu">
-                        <h3>RECOMMEND</h3>
-                        <br>
-                        <b>DOGS</b><br>
-                        hot dogs<BR>
-                        cheese dogs<br>
-                        <br>
-                        <b>BURGERS</b><br>
-                        hamburger<br>
-                        cheeseburger<br>
-                        little hamburger<br>
-                        little cheeseburger<br>
-                        <br>
-                        <b>SANDWICHES</b><br>
-                        veggie sandwich<br>
-                        cheese veggie sandwich<br>
-                        grilled cheese<br>
-                    </div>
-
                     <div class="detials">
-                        <h3>DETAILS</h3>
-                        <b>menu</b><br>
-                        https://fiveguys.co.uk/menu/<br>
-                        <br>
-                        <b>address</b><br>
-                        University Green, M13 9GP<br>
-                        <br>
-                        <b>contect us</b><br>
-                        +441612733622
 
+                        <?php
+                            $sql = "SELECT facilityWebsite, facilityAddress, facilityTel FROM Facility WHERE facilityId='2'";
+
+                            $pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
+                            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+                            foreach ($pdo->query($sql) as $row){
+                                echo '<h3>Details</h3>';
+                                echo '<br><p><b>Website</b></p>';
+                                echo '<a href="' . $row['facilityWebsite'] . '">' . $row['facilityWebsite'] . '</a>';
+                                echo '<br><br><p><b>Address</b></p>';
+                                echo ("{$row['facilityAddress']}");
+                                echo '<br><br><p><b>Tel</b><p/>';
+                                echo ("{$row['facilityTel']}");
+                            }
+                        ?>
 
                     </div>
-
                 </div>
             </div>
         </div>
-
     </div>
-
 </div>
+
 
 <div class="copy-right-section">
     <div id="footer">
