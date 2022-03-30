@@ -8,7 +8,7 @@ $sql = "CREATE TABLE Comment (
     userCommentTime datetime DEFAULT null,
     facilityId int unsigned,
     PRIMARY KEY (commentId),
-    FOREIGN KEY (facilityId) REFERENCES facility(facilityId)
+    FOREIGN KEY (facilityId) REFERENCES Facility(facilityId)
 )";
 
 if ($conn->query($sql))

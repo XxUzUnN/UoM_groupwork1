@@ -6,7 +6,7 @@ $sql = "CREATE TABLE Dish (
     dishIngredients VARCHAR(255) not null,
     facilityId int unsigned,
     PRIMARY KEY (dishId),
-    FOREIGN KEY (facilityId) REFERENCES facility(facilityId)
+    FOREIGN KEY (facilityId) REFERENCES Facility(facilityId)
 )";
 
 if ($conn->query($sql))
