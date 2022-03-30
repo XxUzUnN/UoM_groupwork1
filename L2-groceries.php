@@ -80,7 +80,7 @@
 								<img src="images/L2-groceries-whlung.png" style="width:100%">
 								<div class="container">
 								<?php
-										$sql = "SELECT facilityName FROM facility WHERE facilityId='17'";
+										$sql = "SELECT facilityName FROM Facility WHERE facilityId='17'";
 
 										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
@@ -101,7 +101,7 @@
 								<img src="images/L2-groceries-sainsbury's.png" style="width:100%">
 								<div class="container">
 								<?php
-										$sql = "SELECT facilityName FROM facility WHERE facilityId='18'";
+										$sql = "SELECT facilityName FROM Facility WHERE facilityId='18'";
 
 										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
@@ -122,7 +122,7 @@
 								<img src="images/L2-groceries-morrisons.png" style="width:100%">
 								<div class="container">
 								<?php
-										$sql = "SELECT facilityName FROM facility WHERE facilityId='19'";
+										$sql = "SELECT facilityName FROM Facility WHERE facilityId='19'";
 
 										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
@@ -143,7 +143,7 @@
 								<img src="images/L2-groceries-coop.png" style="width:100%">
 								<div class="container">
 								<?php
-										$sql = "SELECT facilityName FROM facility WHERE facilityId='20'";
+										$sql = "SELECT facilityName FROM Facility WHERE facilityId='20'";
 
 										$pdo = new pdo('mysql:host=dbhost.cs.man.ac.uk;dbname=2021_comp10120_r4', 't56091yd', '12345687');
                                 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
