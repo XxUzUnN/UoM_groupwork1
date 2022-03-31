@@ -14,7 +14,7 @@ body{
   position: relative;
 	}
 .menu:hover{
-	color:#ff4c4c;
+	color:#990099;
 }
 .top-nav {
 		float: right;
@@ -72,10 +72,10 @@ nav#cbp-spmenu-s2 a:hover {
 	background: none;
 	}
 nav#cbp-spmenu-s2 a.active,nav#cbp-spmenu-s2 a:hover {
-	  color: #ff4c4c;
+	  color: #990099;
 	}
 nav#cbp-spmenu-s2 h3 {
-  background: #ff4c4c;
+  background: #990099;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 600;
@@ -237,7 +237,7 @@ color: #999;
 margin-top: 16px;
 }
 .wecome-text h1 {
-   color: #ff4c4c;
+   color: #990099;
   font-size: 4.4em;
   margin: 0 0 11px 0;
   font-family: 'Niconne', cursive;
@@ -285,7 +285,7 @@ a.button.rotate2 span{
 	margin: 1px -3px 3px 13px;
 }
 a.button.rotate2:hover{
-	border: 1px solid #ff4c4c;
+	border: 1px solid #990099;
 	color: #444;
 }
  /*------start-slider-------*/
@@ -741,7 +741,7 @@ display: inline-block;
   font-size: 40px;
   font-weight: 700;
   color: #ffffff;
-  background: #ff4c4c;
+  background: #990099;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -881,7 +881,7 @@ a.offer-btn span {
 }
 a.offer-btn {
 	text-decoration: none;
-	color: #ff4c4c;
+	color: #990099;
 	font-size:1.1em;
 	border: none;
 	text-transform:uppercase; 
@@ -978,7 +978,7 @@ a.offer-btn {
   letter-spacing: 4px;
 }
 .error-page h3 span {
-	color: #ff4c4c;
+	color: #990099;
 }
 .Error-found h4{
   font-weight: 100;
@@ -1003,7 +1003,7 @@ a.back {
 	padding:0;
 	cursor: pointer;
 	border: none;
-	color: #ff4c4c;
+	color: #990099;
 }
 .sale-box{
 	position: absolute;
@@ -1018,7 +1018,7 @@ a.back {
 .sale-box span.on_sale{
 	font-size: 1.5em;
 	color: #FFF;
-	background:#ff4c4c;
+	background:#990099;
 	text-transform: uppercase;
 	padding: 89px 43px 14px 1px;
 	width: 370px;
@@ -1264,7 +1264,7 @@ nav a:focus {
 	position: relative;
 	display: inline-block;
 	padding: 3px 15px 0;
-	background: #ff4c4c;
+	background: #990099;
 	font-size: 16px;
 	box-shadow: inset 0 3px #444;
 	-webkit-transition: background 0.6s;
@@ -1367,7 +1367,7 @@ margin-top: 3px;
 .categories h3,.Archives h3{
 	text-shadow: none;
 	font-size: 1.25em;
-	color:#ff4c4c;
+	color:#990099;
 	font-weight:500;
 	text-transform: uppercase;
 }
@@ -1417,7 +1417,7 @@ text-transform: uppercase;
 font-family: 'OpenSans', sans-serif;
 }
 .admin-main h4 a{
-	color:#ff4c4c;
+	color:#990099;
 	font-weight: 600;
 }
 .admin-text p {
@@ -1623,7 +1623,7 @@ margin-bottom:3em;
   background: #666666;
 }
 .contact-form input[type="submit"]:hover {
-    background: #ff4c4c;
+    background: #990099;
 }
 .address-grids {
   margin-top: 2em;
@@ -1707,7 +1707,7 @@ padding-top: 1em;
 }
 .bottom-icons li a:hover,.footer-grid.bottom-nav ul li a:hover,.footer-grid.category ul li a:hover,.footer-grid.brands ul li a:hover,.footer-grid.contact ul li a:hover{
   text-decoration: none;
-  color: #ff4c4c;
+  color: #990099;
 }
 .copy-right-section{
 	background: #C5C5C5;
