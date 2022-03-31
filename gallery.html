@@ -1,61 +1,124 @@
+<!DOCTYPE HTML>
 <html>
 <head>
-
     <style>
-
-        .par{
-            text-align: center;
-            color: #1FBBA6;
-            font-size: 20px;
+        .bg2 {
+            position: absolute;
+            top:0px;
+            left:0px;
+            z-index:-5;
         }
-
-        .title {
-            text-align: center;
-            margin: 10px 0;
-            color: #666;
-            font-size: 50px;
-        }
-
     </style>
 
+    <title>Gallery</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+
+    <link href="css/bootstrap.css" media="all" rel='stylesheet' type='text/css'/>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' media="all" />
+
+    <link href="css/style.css" media="all" rel='stylesheet' type='text/css'/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+
+
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+
+    <link href="css/component.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script src="js/move-top.js" type="text/javascript"></script>
+    <script src="js/easing.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+
+
 </head>
-<body background="images/Subpage/bg1.jpg">
+<body>
+    <div class="header-top">
+        <div class="header-logo">
+            <a href="index.html"><img alt="" src="images/logo.png"/></a>
+        </div>
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+        <div id="About Us">
+            <div class="container">
+                <div class="wecome-main">
+                            
+                    <div class=" col-md-13 wecome-text" style="text-align:left">
+                        <h1 style="color:#990099"><b>Page Description</b></h1>
+                        <span style="font-size:170%; color:black">The original purpose of this webpage is to help students get familiar with and discover the restaurants around them and to bring you a better experience. This webpage divides the recommendations into three sections: food recommendations, drink recommendations, and supermarket recommendations, by clicking on them you can enter different categories, in which you can choose and browse your favorite restaurants, supermarkets, and by clicking on them you can see the details and user reviews.</span>
+                    </div>  
+                    <div class="clearfix"></div>
 
-<div class="logo">
-    <a href="index.html"><img src="images/logo.png"/></a>
-</div>
+                    <br><br><br><br>
 
-<div class="container">
-    <h1 class="title">Why we build this webside?</h1>
-    <div class="foodCard">
-        <h2 class="par">Many students around us are hesitant about what to eat every day, and this is a great problem for both new and experienced students, whether they want to try new restaurants or are unfamiliar with the campus and want to get acquainted with it as soon as possible, we provide a platform for you to post reviews of recommended restaurants and rate different restaurants so that you can experience new restaurants and integrate into the campus faster.</h2>
-        <h1 class="title">Page Description.</h1>
-            <h2 class="par">The original purpose of this webpage is to help students get familiar with and discover the restaurants around them and to bring you a better experience. This webpage divides the recommendations into three sections: food recommendations, drink recommendations, and supermarket recommendations, by clicking on them you can enter different categories, in which you can choose and browse your favorite restaurants, supermarkets, and by clicking on them you can see the details and user reviews</h2>
-        <h1 class="title">Contact us</h1>
-        <h2 class="par">Phone:07421732313</h2>
-        <h2 class="par">Email:2601447509@qq.com</h2>
-        <h2 class="par">Address:M50 3BG.</h2>
+                    <div class=" col-md-13 wecome-text" style="text-align:left">
+                        <h1 style="color:#990099"><b>Why we build this webside?</b></h1>
+                        <span style="font-size:170%; color:black">Many students around us are hesitant about what to eat every day, and this is a great problem for both new and experienced students, whether they want to try new restaurants or are unfamiliar with the campus and want to get acquainted with it as soon as possible, we provide a platform for you to post reviews of recommended restaurants and rate different restaurants so that you can experience new restaurants and integrate into the campus faster.</span>
+                    </div>  
+                    <div class="clearfix"></div>
+
+                    <br><br><br><br>
+
+                    <div class=" col-md-13 wecome-text" style="text-align:left">
+                        <h1 style="color:#990099"><b>Contact Us</b></h1>
+                        <span style="font-size:170%; color:black;">Jiho Park &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="mailto:lisapark9123@gmail.com">lisapark9123@gmail.com</a></span><br>
+                        <span style="font-size:170%; color:black;">Xinyu Li &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="mailto:sssssophia.li@gmail.com">sssssophia.li@gmail.com</a></span><br>
+                        <span style="font-size:170%; color:black;">Yining Du &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="mailto:bobmorningstar812@gmail.com">bobmorningstar812@gmail.com</a></span><br>
+                        <span style="font-size:170%; color:black;">Yuanye Dong &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="mailto:leod22630@gmail.com">leod22630@gmail.com</a></span><br>
+                        <span style="font-size:170%; color:black;">Zihao Chen &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="mailto:nataliansiskau6@gmail.com">nataliansiskau6@gmail.com</a></span><br>
+                        <span style="font-size:170%; color:black;">Zixun Zhou &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <a href="mailto:zixunzhou56@gmail.com">zixunzhou56@gmail.com</a></span>
+                        
+                    </div>  
+                    <div class="clearfix"></div>
+
+                </div>
+            </div>
+        </div>  
+
+        <div class="clearfix"></div>
     </div>
-</div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <div class="bg2">
+        <img src="images/bg2.jpg" style="width:1864px;height:1440px;">
+    </div>
 
-<div class="copy-right-section" style="position:relative; margin-left:200px">
-    <div id="footer">
-        <div class="container">
-            <div class="footer-grids">
-                    <p>Created by Jiho Park, Xinyu Li, Yining Du, Yuanye Dong, Zihao Chen and Zixun Zhou &copy 2022</p>	
-                <div class="clearfix"> </div>							
+    <br>
+    <br>
+    <br>
+
+    <div class="copy-right-section">
+        <div id="footer">
+            <div class="container">
+                <div class="footer-grids">
+                        <p>Created by Jiho Park, Xinyu Li, Yining Du, Yuanye Dong, Zihao Chen and Zixun Zhou &copy 2022</p>	
+                    <div class="clearfix"> </div>							
+                </div>
             </div>
         </div>
     </div>
-</div>
+
 
 </body>
 </html>
+
+                
