@@ -100,7 +100,7 @@
                                 <ul class="product-head">
                                     <li><a href="index.html">Home</a> <span>::</span></li>
                                     <li><a href="L2-food.php">Food</a> <span>::</span></li>
-                                    <li class="active-page"><a href="L3-food-brewdog.php">Brewdog</a></li>
+                                    <li class="active-page"><a href="L3-food-Brewdog.php">Brewdog</a></li>
                                     <div class="clear"></div>
                                 </ul>
 
@@ -109,7 +109,7 @@
                                 </div>
 
                                 <div class="blog-artical-info-img single-head-img">
-                                    <img alt="image" src="images/L3-food-fiveguys.png">
+                                    <img alt="image" src="images/L3-food-Brewdog.png">
                                 </div>
 
                                 <div class="blog-artical-info-text">
