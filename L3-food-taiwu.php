@@ -115,13 +115,13 @@
 
                                 <div class="blog-artical-info-text">
                                     <p>
-                                        The Chinese Restaurant is located in the South campus of the University of
-                                        Manchester, five minutes' walk from the teaching building on the south campus.
-                                        Downstairs is Whlung, a Chinese supermarket, which is convenient for shopping and
-                                        eating.
-                                        This restaurant also provides large celebration service during holidays and daily
-                                        parking service.
+                                    Welcome to the Tai Wu Chinese Restaurant, a little part of The Far East just a mile south of Manchester City Centre. We have now rebranded from the Tai Pan, as hopefully with a change in name we can also prosper with a change in fortune after such a difficult year during the pandemic.
+
+                                    Our aim is to take you beyond the “Bamboo Curtain” on a culinary experience that will both delight and tantalise your taste buds. Tai Wu literally translated means “Great Lake”, and is one of the largest lakes in China which draws a parallel with ourselves being one of the largest Chinese restaurants in Manchester.
+
+                                    Tai Wu boasts a huge expanse of space, presenting a comparable eclectic choice of regional cooking styles and cuisines, we truly offer an authentic array of dishes duly confirmed by those who have visited the Far East and those visiting here from our Motherland.
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://www.taiwu.co.uk">https://www.taiwu.co.uk</a>.</cite></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>

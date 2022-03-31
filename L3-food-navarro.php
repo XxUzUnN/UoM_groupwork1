@@ -114,8 +114,9 @@
                                 </div>
 
                                 <div class="blog-artical-info-text">
-									<p>Lounges was founded in 2002 by a trio of long standing friends, Dave Reid, Alex Reilley and Jake Bishop. Having spent years in the restaurant and bar trade - not to mention just as many propping up the bars in Bristol (all of course in the name of research) – they decided it was time they did their own thing. The motivation was simple and very selfish; they wanted somewhere to drink themselves.</p>
+									<p>Lounges was founded in 2002 by a trio of long standing friends, Dave Reid, Alex Reilley and Jake Bishop. Having spent years in the restaurant and bar trade - not to mention just as many propping up the bars in Bristol (all of course in the name of research) - they decided it was time they did their own thing. The motivation was simple and very selfish; they wanted somewhere to drink themselves.</p>
 									<p>Our menus reflect our personality. We take food really seriously, using the best fresh produce in really creative dishes, but we also make sure our menus are about pleasure, indulgence, and fun! A bit like us</p>
+                                    <p style="color: grey;">Content from <cite><a href="https://thelounges.co.uk/about/">https://thelounges.co.uk/about/</a>.</cite></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>                            

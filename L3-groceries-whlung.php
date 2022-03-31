@@ -125,6 +125,7 @@
                                         As we are operating social distancing rules within our shop, due to the amount of
                                         customers, please note the last entry times above.<br>
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://whlungmcr.com">https://whlungmcr.com</a>.</cite></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>

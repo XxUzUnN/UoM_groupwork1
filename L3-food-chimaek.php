@@ -126,6 +126,7 @@
                                         Sat   12pm - 9pm<br>
                                         *Last order  for Dine In 8:30pm.<br>
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://www.chimaek.uk/contact">https://www.chimaek.uk/contact</a>.</cite></p>
                                     </div>
                             </div>
                             <div class="clearfix"></div>                            

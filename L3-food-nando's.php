@@ -129,6 +129,7 @@
                                         Keep an eye out for our seasonal guest spices like Mango & Lime, Spiced
                                         Clementine or Garlic BBQ - there for a good time, not a long time.
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://www.nandos.co.uk/about-us/food">https://www.nandos.co.uk/about-us/food</a>.</cite></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>

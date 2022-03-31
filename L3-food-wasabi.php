@@ -122,6 +122,7 @@
                                         We are happy to announce that both branches are now open for dining in and take out.<BR>
                                         Please check our social media for offer updates.<BR>
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="http://www.wasabisushi.co.uk">http://www.wasabisushi.co.uk</a>.</cite></p>
                                     </div>
                             </div>
                             <div class="clearfix"></div>                            

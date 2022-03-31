@@ -115,12 +115,11 @@
 
                                 <div class="blog-artical-info-text">
                                     <p>
-                                        ABOUT US<br><br>
-                                        Brothers Tayub and Mudassar Amjad wanted to share their love of authentic recipes with a modern twist, served in a relaxed contemporary setting.<BR>
-                                        Combining street food from the markets of Lahore with traditional dishes from the Indian sub-continent, Zouk is a true melting pot of the very best in modern and traditional cookery. <BR>
-                                        To this day, that same passion fuels everything we do. <BR>
-                                        From sourcing new dishes and ideas around the globe to delivering friendly service with a welcoming smile, everybody at Zouk is here to make our customers experience extra special in every way.<BR>
+                                        Zouk offers Pakistani and Indian authentic cuisine served in modern, comfortable surroundings, meaning you can indulge in the most delicious food around, while relaxing with friends and family.<br>
+                                        At Zouk, we love to share our passion for great food. Whether you’re a beginner or dab-hand to the kitchen, you’re sure to pick up plently of ideas and inspiration at out half day Cookery School courses.<br>
+                                        Whatever the occasion, whether it's a special anniversary, wedding, big birthday, garden party or just something worth celebrating in style, why not let Zouk do the catering for you?<br>
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://zoukteabar.co.uk">https://zoukteabar.co.uk</a>.</cite></p>
                                     </div>
                             </div>
                             <div class="clearfix"></div>                            

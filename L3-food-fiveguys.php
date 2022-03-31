@@ -130,6 +130,7 @@
                                         Today, we have more than 1,500 locations open in North America, Canada, UK,, Middle
                                         East, Europe and growing.<br>
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://www.fiveguys.com/the-five-guys-story">https://www.fiveguys.com/the-five-guys-story</a>.</cite></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>                            

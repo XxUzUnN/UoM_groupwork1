@@ -119,7 +119,9 @@
 									<p>We're also: the UK's number 1 funeral services provider, a major general insurer ,a growing legal services business </p>
 									<p>We exist to meet members' needs and stand up for the things they believe in.
 										So, the more successful we are, the more we can give back to you and your local community.
-										That's why we're different.</p>
+										That's why we're different.
+                                    </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://www.co-operative.coop/who-we-are">https://www.co-operative.coop/who-we-are</a>.</cite></p>
 								</div>
 							</div>
 							<div class="clearfix"> </div>

@@ -139,6 +139,7 @@
                                         from Taiwan. We insist on MIT (Made in Taiwan) and reproduce the ancient and classic
                                         taste.<br>
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://yifangtea.com.tw/en/about/">https://yifangtea.com.tw/en/about/</a>.</cite></p>
                                     </div>
                             </div>
                             <div class="clearfix"></div>                            

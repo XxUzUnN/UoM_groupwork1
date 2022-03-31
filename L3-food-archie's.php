@@ -109,7 +109,8 @@
 
                                 <div class="blog-artical-info-text">
 									<p>Its star-studded appeal has become a recognized and admired place to be, with a creative and unique menu ranging from their world-famous shakes and ridiculously indulgent waffles, to the handmade smashed star burgers.</p>
-									<p>As well as building such an edgy and vibrant, cool place to dine and hang out, Archie’s is on a mission to provide the most unique and exciting menu, and strives to provide the best quality service to all our loyal fans and customers.</p>
+									<p>As well as building such an edgy and vibrant, cool place to dine and hang out, Archie's is on a mission to provide the most unique and exciting menu, and strives to provide the best quality service to all our loyal fans and customers.</p>
+                                    <p style="color: grey;">Content from <cite><a href="https://lovearchies.com/about-2/">https://lovearchies.com/about-2/</a>.</cite></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>                            

@@ -132,6 +132,7 @@
                                         We only use the best quality teas at Gong cha and our teas are freshly brewed in
                                         our outlets to ensure optimal freshness and flavor in each cup of tea.
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://www.gong-cha.co.uk/about-us/">https://www.gong-cha.co.uk/about-us/</a>.</cite></p>
                                     </div>
                             </div>
                             <div class="clearfix"></div>                            

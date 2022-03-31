@@ -116,13 +116,12 @@
 
                                 <div class="blog-artical-info-text">
                                     <p>
-                                        The Chinese Restaurant is located in the South campus of the University of
-                                        Manchester, five minutes' walk from the teaching building on the south campus.
-                                        Downstairs is Whlung, a Chinese supermarket, which is convenient for shopping and
-                                        eating.
-                                        This restaurant also provides large celebration service during holidays and daily
-                                        parking service.
+                                    To make and provide food we're all proud of, where everyone's effort is worthwhile, so more and more people can afford to enjoy eating well.<br>
+                                    We are proud to be a Yorkshire food retailer serving customers across the UK through our network of 497 conveniently located supermarkets and various online home delivery channels.<br>
+                                    Our business is predominantly food and grocery focussed and uniquely, we source and process half of the fresh food that we sell in our own manufacturing facilities and stores which gives us close control over provenance and quality.  Our committed and professionally trained food makers and shopkeepers prepare food in-store for customers and we have more skilled colleagues preparing food in store than any other retailer.<br>
+                                    Every week around 9m customers pass through our doors and over 118,000 colleagues across the business work hard each day to deliver great service to them.  We cover over 97% of UK postcodes through our online delivery service.  With competitive, permanently low prices we are committed to helping our customers save money every day.
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://www.morrisons-corporate.com/about-us/company-history/">https://www.morrisons-corporate.com/about-us/company-history/</a>.</cite></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>

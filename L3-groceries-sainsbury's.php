@@ -132,6 +132,7 @@
                                         for all. We want to help make eating well affordable, easy and tasty, to support
                                         having a positive impact on health and the health of the planet.
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://www.about.sainsburys.co.uk/about-us">https://www.about.sainsburys.co.uk/about-us</a>.</cite></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>

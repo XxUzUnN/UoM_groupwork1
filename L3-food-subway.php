@@ -129,6 +129,7 @@
                                         to take your order in-store, for collection via our Subcard app, or delivered straight to your home via our
                                         friends over at Just Eat, Uber Eats or Deliveroo. So go meaty, go plant-based, go spicy, go saucy, or just go ALL OUT.
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://restaurants.subway.com/united-kingdom/en/manchester/12-oxford-road">https://restaurants.subway.com/united-kingdom/en/manchester/12-oxford-road</a>.</cite></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>

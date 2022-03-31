@@ -144,6 +144,7 @@
                                         come and celebrate your special occasions or events and give your loved ones a treat
                                         at Icesone Gelato making every occasion a special one.<br>
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://icestonegelato.co.uk/about">https://icestonegelato.co.uk/about</a>.</cite></p>
                                     </div>
                             </div>
                             <div class="clearfix"></div>                            

@@ -120,6 +120,7 @@
 										That's also why our coffee is 100% organic (and always will be) and our Coffee Fund is supporting the next generation of farmers.
 										It's (partly) what we think makes Pret special. See our full menu for our delicious range of food and coffee.
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://www.pret.com/en-US/about-pret">https://www.pret.com/en-US/about-pret</a>.</cite></p>
                                     </div>
                             </div>
                             <div class="clearfix"></div>                            

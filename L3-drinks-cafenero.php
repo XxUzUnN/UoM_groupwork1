@@ -138,6 +138,7 @@
                                         This has led to our family owned and operated business opening more than 800
                                         coffee houses across Europe.
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://caffenero.com/uk/about-us/our-story">https://caffenero.com/uk/about-us/our-story</a>.</cite></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>                            

@@ -122,6 +122,7 @@
                                         We opened the finest Turkish steakhouse in Manchester at the end of 2018 followed by Liverpool and Birmingham in 2021.<BR>
                                         The whole team at Etçi Mehmet look forward to welcoming you.<BR>
                                     </p>
+                                    <p style="color: grey;">Content from <cite><a href="https://www.etcimehmet.co.uk/about.html">https://www.etcimehmet.co.uk/about.html</a>.</cite></p>
                                     </div>
                             </div>
                             <div class="clearfix"></div>                            

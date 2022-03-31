@@ -117,7 +117,8 @@
 										but have the opportunity of drinking exclusive, one-off creations from the on-site brew pub.</p>
 									<p>Those with an appetite can look forward to our infamous burgers, wings and salad menu.
 										And those with a curiosity for all things beer can book in a tour or beer school in our dedicated area.</p>
-                                        </div>
+                                        <p style="color: grey;">Content from <cite><a href="https://www.brewdog.com/uk/bars/uk/manchester-outpost">https://www.brewdog.com/uk/bars/uk/manchester-outpost</a>.</cite></p>
+                                </div>
                             </div>
                             <div class="clearfix"></div>                            
                         </div>
