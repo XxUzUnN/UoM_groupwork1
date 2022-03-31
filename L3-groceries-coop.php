@@ -111,7 +111,7 @@
                                 </div>
 
                                 <div class="blog-artical-info-img single-head-img">
-                                    <img alt="image" src="images/L3-food-fiveguys.png">
+                                    <img alt="image" src="images/L3-groceries-coop.png">
                                 </div>
 
                                 <div class="blog-artical-info-text">
