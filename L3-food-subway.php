@@ -136,7 +136,7 @@
 
                         <span style="font-size: 30px;">Recommended Dishes</span> <span id="marker" style="color: grey; font-size: 20px;">*</span>
                         <br>
-                        <p style="color:grey; font-size:8px;">*The ingredients/allergen list provided are all from the official website of the relative resaurant. The final interpretation of this list belongs to the relative resaurant. EAT shall not be held responsible for the content of the lists.</p>
+                        <p style="color:grey; font-size:8px;">*The ingredients/allergen list provided are all from the official website of the relative restaurant. The final interpretation of this list belongs to the relative restaurant. EAT shall not be held responsible for the content of the lists.</p>
                         <br>
 
                         <div class="flip-card">
@@ -207,6 +207,18 @@
                                 ?>
                             </div>
                         </div>
+
+                        <br><br><br>
+                        <span style="font-size: 30px;">Location</span>
+                        <div class="container">
+                            <div class="col-md-6 social-icons" >
+                                <ul class="soc_icons2"></ul>
+                                <iframe height="500" width="810" style="position:relative; margin-left:-600px"
+                                        src="https://www.google.com/maps/d/embed?mid=1pcb8DCZhYVFDvlxb9L2sHA-cYIyCg9P6&ehbc=2E312F"></iframe>
+                            </div>
+                        </div>
+
+                        <br>
 
                         <div class="reply">
                             <h4>Leave Your Reply</h4>

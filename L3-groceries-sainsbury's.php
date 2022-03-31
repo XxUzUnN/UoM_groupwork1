@@ -137,6 +137,18 @@
                             <div class="clearfix"></div>
                         </div>
 
+                        <br><br><br>
+                        <span style="font-size: 30px;">Location</span>
+                        <div class="container">
+                            <div class="col-md-6 social-icons" >
+                                <ul class="soc_icons2"></ul>
+                                <iframe height="500" width="810" style="position:relative; margin-left:-600px"
+                                        src="https://www.google.com/maps/d/embed?mid=1C0YdyPJ15yTnuz8uJzpEdqF57VAR2_Mm&ehbc=2E312F"></iframe>
+                            </div>
+                        </div>
+
+                        <br>
+
                         <div class="reply">
                             <h4>Leave Your Reply</h4>
                             <form method="POST">
