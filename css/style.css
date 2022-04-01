@@ -202,6 +202,7 @@ span.menu{
 /*------------------ Slider Part starts Here----------*/
 /*--- slider-css --*/
 .header-section{
+	background-color: grey;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
